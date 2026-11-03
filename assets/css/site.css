@@ -1,0 +1,282 @@
+/* =========================================================================
+   Hologenomiks · estilos de la web
+   Identidad visual «Costa».
+   Este archivo SOLO usa las variables de hologenomics-costa.css, que se carga antes.
+   Reglas: fondo hueso-100 · texto pizarra-500 · enlaces mar-700 · botón mar-500 con texto hueso ·
+   un solo acento ámbar por página (la etiqueta de la cabecera) · radios ≤ 12 px · sin degradados.
+   ========================================================================= */
+
+:root{
+  color-scheme:light;
+  --ancho:72rem;
+  --lectura:42rem;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:5rem}
+body{margin:0}
+img,svg{max-width:100%;height:auto;display:block}
+a{text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--mar-500);outline-offset:3px;border-radius:var(--radio-1)}
+.sobre-oscuro :focus-visible{outline-color:var(--hueso-100)}
+
+h1,h2,h3,h4{color:var(--pizarra-500);margin:0 0 .5em}
+h4{font:600 17px/24px var(--font-texto);margin-bottom:.3em}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.25em}
+li{margin-bottom:.35em}
+.pequeno,small{font:var(--pequeno)}
+.secundario{color:var(--texto-secundario)}
+@media (max-width:620px){
+  h1{font-size:30px;line-height:36px}
+  h2{font-size:24px;line-height:30px}
+  h3{font-size:20px;line-height:26px}
+}
+
+.salto{position:absolute;left:-999px;top:0;background:var(--pizarra-500);color:var(--hueso-100);padding:.6rem 1rem;z-index:100;font-weight:700}
+.salto:focus{left:1rem;top:1rem}
+
+.contenedor{width:100%;max-width:var(--ancho);margin:0 auto;padding:0 var(--espacio-4)}
+@media (min-width:720px){.contenedor{padding:0 var(--espacio-8)}}
+
+/* ---------- Cabecera ---------- */
+.cabecera{background:var(--pizarra-500);color:var(--hueso-100);position:sticky;top:0;z-index:50}
+.cabecera .contenedor{display:flex;align-items:center;justify-content:space-between;gap:var(--espacio-4);min-height:4.25rem}
+.marca{display:flex;flex-direction:column;color:var(--hueso-100);text-decoration:none;line-height:1.1}
+.marca-nombre{font:600 24px/28px var(--font-titulos);letter-spacing:.005em}
+.marca-sub{font:var(--etiqueta);letter-spacing:.08em;text-transform:uppercase;color:var(--pizarra-100);margin-top:2px}
+.menu-boton{display:inline-flex;align-items:center;gap:.5rem;background:transparent;border:1px solid var(--pizarra-100);color:var(--hueso-100);border-radius:var(--radio-1);padding:.45rem .8rem;font:var(--boton-f);cursor:pointer}
+.menu-boton svg{width:1.1rem;height:1.1rem}
+.nav{display:none}
+.nav.abierto{display:block;position:absolute;left:0;right:0;top:100%;background:var(--pizarra-700)}
+.nav ul{list-style:none;margin:0;padding:var(--espacio-2) var(--espacio-4) var(--espacio-4)}
+.nav li{margin:0}
+.nav a{display:block;color:var(--hueso-100);text-decoration:none;padding:.7rem .25rem;border-bottom:1px solid var(--pizarra-300);font-weight:600}
+.nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:.3em}
+@media (min-width:880px){
+  .menu-boton{display:none}
+  .nav,.nav.abierto{display:block;position:static;background:none}
+  .nav ul{display:flex;gap:var(--espacio-1);padding:0}
+  .nav a{border:0;padding:.5rem .8rem;border-radius:var(--radio-1)}
+  .nav a:hover{background:var(--pizarra-700)}
+  .nav a[aria-current="page"]{text-decoration:none;box-shadow:inset 0 -2px 0 var(--hueso-100);border-radius:0}
+}
+
+/* ---------- Cabeceras de página (pizarra) ---------- */
+.portada,.cabeza-pagina{background:var(--pizarra-500);color:var(--hueso-100);border-top:1px solid var(--pizarra-700)}
+.portada .contenedor{padding-top:var(--espacio-16);padding-bottom:var(--espacio-16)}
+.cabeza-pagina .contenedor{padding-top:var(--espacio-12);padding-bottom:var(--espacio-12)}
+.portada h1{font:var(--display);color:var(--hueso-100);max-width:20ch}
+@media (max-width:620px){.portada h1{font-size:34px;line-height:40px}.portada .contenedor{padding-top:var(--espacio-12);padding-bottom:var(--espacio-12)}}
+.cabeza-pagina h1{color:var(--hueso-100)}
+.portada p,.cabeza-pagina p{max-width:var(--lectura);color:var(--pizarra-050)}
+.cabeza-pagina p{margin:0}
+.etiqueta{display:block;margin-bottom:var(--espacio-3);color:var(--pizarra-300)}
+/* El único acento ámbar de cada página: la etiqueta sobre pizarra (pareja válida ámbar-500/pizarra-500). */
+.portada .etiqueta,.cabeza-pagina .etiqueta{color:var(--ambar-500)}
+
+/* ---------- Secciones ---------- */
+.seccion{padding:var(--espacio-12) 0}
+.seccion+.seccion{border-top:1px solid var(--linea)}
+.seccion.tintada{background:var(--hueso-200);border-top:0}
+.seccion-cabeza{max-width:var(--lectura);margin-bottom:var(--espacio-8)}
+.seccion-cabeza p{color:var(--texto-secundario)}
+.lectura{max-width:var(--lectura)}
+.dos-columnas{display:grid;gap:var(--espacio-8)}
+@media (min-width:880px){.dos-columnas{grid-template-columns:1fr 1fr;gap:var(--espacio-12)}}
+
+/* ---------- Superficies (tarjetas: radio 8, sin sombra) ---------- */
+.acceso,.pub,.pub-mini,.linea-inv,.ficha,.mc,.servicio,.persona,.datos,details.plegable,.nota,.sello{background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio-2)}
+
+.accesos{display:grid;gap:var(--espacio-4)}
+@media (min-width:760px){.accesos{grid-template-columns:repeat(3,1fr)}}
+.acceso{display:flex;flex-direction:column;gap:var(--espacio-2);border-top:3px solid var(--pizarra-500);padding:var(--espacio-6);text-decoration:none;color:var(--texto)}
+.acceso:hover{border-color:var(--mar-500)}
+.acceso h3{margin:0}
+.acceso p{margin:0;color:var(--texto-secundario)}
+.acceso .ir{margin-top:auto;padding-top:var(--espacio-2);font-weight:600;color:var(--enlace)}
+.acceso .icono{width:40px;height:40px;color:var(--pizarra-500)}
+
+.sello{display:flex;gap:var(--espacio-4);align-items:center;padding:var(--espacio-4) var(--espacio-6)}
+.sello-marca{flex:none;display:grid;place-items:center;width:4.2rem;height:4.2rem;border:1px solid var(--pizarra-500);font:600 13px/15px var(--font-texto);color:var(--pizarra-500);text-align:center}
+.sello p{margin:0}
+
+/* ---------- Botones ---------- */
+.botones{display:flex;flex-wrap:wrap;gap:var(--espacio-3);margin-top:var(--espacio-4)}
+.boton{display:inline-flex;align-items:center;justify-content:center;gap:var(--espacio-2);min-height:44px;padding:var(--espacio-3) var(--espacio-6);text-decoration:none;border:1px solid var(--boton)}
+.boton:hover{background:var(--mar-700);border-color:var(--mar-700)}
+.boton--secundario{border:1px solid var(--texto)}
+.boton--secundario:hover{background:var(--hueso-200);border-color:var(--texto)}
+.sobre-oscuro .boton--secundario{color:var(--hueso-100);border-color:var(--hueso-100)}
+.sobre-oscuro .boton--secundario:hover{background:var(--pizarra-700)}
+.boton[aria-disabled="true"]{cursor:not-allowed;opacity:.75}
+
+/* ---------- Marcadores de contenido pendiente (temporales) ---------- */
+.pendiente{display:inline;background:var(--pizarra-050);color:var(--alerta-500);border:1px dashed var(--alerta-500);border-radius:var(--radio-1);padding:0 .3em;font-size:.92em;font-weight:600;font-family:var(--font-texto);font-style:normal}
+.aviso-pendiente{background:var(--pizarra-050);border:1px dashed var(--alerta-500);color:var(--alerta-500);border-radius:var(--radio-1);padding:var(--espacio-3) var(--espacio-4);font:var(--pequeno);font-weight:600}
+.sobre-oscuro .pendiente{background:var(--hueso-100)}
+
+/* ---------- Avisos de rigor ---------- */
+.nota{border-left:3px solid var(--pizarra-500);padding:var(--espacio-4) var(--espacio-6)}
+.nota strong{color:var(--pizarra-500)}
+.ilustrativo{display:inline-block;font:var(--etiqueta);letter-spacing:.08em;text-transform:uppercase;color:var(--piedra-700);border:1px solid var(--piedra-300);border-radius:var(--radio-1);padding:.05rem .5rem;vertical-align:middle}
+
+/* ---------- Datos (JetBrains Mono) ---------- */
+.dato,.doi,.anio,.codigo,.revista{font:var(--dato);font-variant-numeric:tabular-nums}
+
+/* ---------- Publicaciones ---------- */
+.pubs-recientes{list-style:none;padding:0;margin:0;display:grid;gap:var(--espacio-4)}
+@media (min-width:880px){.pubs-recientes{grid-template-columns:repeat(3,1fr)}}
+.pubs-recientes li{margin:0}
+.pub-mini{padding:var(--espacio-4) var(--espacio-6);display:flex;flex-direction:column;gap:var(--espacio-2);height:100%}
+.pub-mini .revista{color:var(--piedra-700);font-size:13px}
+.pub-mini h3{font:600 18px/24px var(--font-titulos);margin:0}
+
+.pub{display:grid;gap:var(--espacio-6);padding:var(--espacio-6);margin-bottom:var(--espacio-6)}
+@media (min-width:880px){.pub{grid-template-columns:20rem 1fr;gap:var(--espacio-8)}}
+.pub figure{margin:0}
+.pub figure img{width:100%;border:1px solid var(--linea)}
+.pub figcaption{font:var(--pequeno);color:var(--texto-secundario);margin-top:var(--espacio-2)}
+.pub h3{margin-bottom:var(--espacio-2)}
+.pub .cita{font:var(--pequeno);color:var(--texto-secundario);margin-bottom:var(--espacio-3)}
+.pub .doi{font-weight:600}
+
+.lista-pubs{list-style:none;padding:0;margin:0}
+.lista-pubs li{padding:var(--espacio-3) 0;border-bottom:1px solid var(--linea);margin:0}
+.lista-pubs .anio{display:inline-block;min-width:3.4rem;font-weight:600;color:var(--pizarra-500)}
+details.plegable{padding:0 var(--espacio-6)}
+details.plegable>summary{cursor:pointer;padding:var(--espacio-4) 0;font-weight:600;color:var(--pizarra-500)}
+details.plegable[open]>summary{border-bottom:1px solid var(--linea);margin-bottom:var(--espacio-2)}
+
+/* ---------- Líneas de investigación ---------- */
+.lineas{display:grid;gap:var(--espacio-4)}
+@media (min-width:760px){.lineas{grid-template-columns:repeat(2,1fr)}}
+.linea-inv{padding:var(--espacio-6)}
+.linea-inv h3{display:flex;gap:var(--espacio-3);align-items:baseline}
+.linea-inv .num{flex:none;font:600 13px/18px var(--font-datos);color:var(--hueso-100);background:var(--pizarra-500);border-radius:var(--radio-1);padding:1px 6px}
+.linea-inv p:last-child{margin-bottom:0}
+
+/* ---------- Fichas ---------- */
+.fichas{display:grid;gap:var(--espacio-4)}
+@media (min-width:760px){.fichas{grid-template-columns:repeat(2,1fr)}}
+.ficha{padding:var(--espacio-6)}
+.ficha .meta{font:var(--pequeno);color:var(--texto-secundario)}
+
+.datos{display:grid;grid-template-columns:auto 1fr;gap:var(--espacio-2) var(--espacio-6);margin:0 0 var(--espacio-6);padding:var(--espacio-4) var(--espacio-6)}
+.datos dt{font-weight:600;color:var(--pizarra-500)}
+.datos dd{margin:0}
+@media (max-width:520px){.datos{grid-template-columns:1fr;padding:var(--espacio-4)}.datos dt{margin-top:var(--espacio-2)}}
+
+.mc-rejilla{display:grid;gap:var(--espacio-4)}
+@media (min-width:760px){.mc-rejilla{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1100px){.mc-rejilla{grid-template-columns:repeat(4,1fr)}}
+.mc{display:flex;flex-direction:column;gap:var(--espacio-2);padding:var(--espacio-6);text-decoration:none;color:var(--texto)}
+a.mc:hover{border-color:var(--mar-500)}
+.mc .codigo{font-weight:600;color:var(--pizarra-300)}
+.mc h3{font:600 19px/25px var(--font-titulos);margin:0}
+.mc .estado{align-self:flex-start;font:var(--etiqueta);letter-spacing:.06em;text-transform:uppercase;border-radius:var(--radio-1);padding:3px 8px}
+.estado.abierta{background:var(--mar-500);color:var(--hueso-100)}
+.estado.preventa{background:var(--mar-100);color:var(--mar-900)}
+.estado.diseno{background:var(--pizarra-050);color:var(--pizarra-500)}
+
+.programa{counter-reset:bloque;list-style:none;padding:0;margin:0}
+.programa>li{position:relative;padding:var(--espacio-4) 0 var(--espacio-4) var(--espacio-12);border-bottom:1px solid var(--linea);margin:0}
+.programa>li::before{counter-increment:bloque;content:counter(bloque);position:absolute;left:0;top:var(--espacio-4);width:32px;height:32px;display:grid;place-items:center;background:var(--pizarra-500);color:var(--hueso-100);font:600 14px/1 var(--font-datos);border-radius:var(--radio-1)}
+.programa h4{margin:0 0 var(--espacio-1)}
+.programa p{margin:0;color:var(--texto-secundario)}
+
+/* ---------- Servicios ---------- */
+.servicio{padding:var(--espacio-6);margin-bottom:var(--espacio-6)}
+@media (min-width:880px){.servicio{padding:var(--espacio-8) var(--espacio-12)}}
+.rejilla-3{display:grid;gap:var(--espacio-6)}
+@media (min-width:880px){.rejilla-3{grid-template-columns:repeat(3,1fr)}}
+.pasos{counter-reset:paso;list-style:none;padding:0}
+.pasos li{position:relative;padding-left:36px;margin-bottom:var(--espacio-3)}
+.pasos li::before{counter-increment:paso;content:counter(paso);position:absolute;left:0;top:2px;width:24px;height:24px;border-radius:var(--radio-1);background:var(--pizarra-050);color:var(--pizarra-500);font:600 13px/24px var(--font-datos);text-align:center}
+.ejemplos{display:grid;gap:var(--espacio-4);margin-top:var(--espacio-2)}
+@media (min-width:760px){.ejemplos{grid-template-columns:repeat(3,1fr)}}
+.ejemplo{border:1px solid var(--linea);border-radius:var(--radio-2);padding:var(--espacio-4);background:var(--fondo)}
+.ejemplo p{font:var(--pequeno);margin:0 0 var(--espacio-2)}
+.ejemplo .lectura-res{color:var(--texto-secundario);margin:0}
+/* Genética = pizarra; microbioma = mar (regla de gráficos de Costa) */
+#genetico{border-top:3px solid var(--pizarra-500)}
+#microbioma{border-top:3px solid var(--mar-500)}
+
+/* ---------- Equipo ---------- */
+.personas{display:grid;gap:var(--espacio-4)}
+@media (min-width:760px){.personas{grid-template-columns:repeat(2,1fr)}}
+.persona{display:grid;grid-template-columns:56px 1fr;gap:var(--espacio-4);padding:var(--espacio-6)}
+.iniciales{width:56px;height:56px;display:grid;place-items:center;background:var(--pizarra-500);color:var(--hueso-100);font:600 18px/1 var(--font-titulos);border-radius:var(--radio-1)}
+.persona h3{margin:0 0 var(--espacio-1)}
+.persona .rol{color:var(--texto-secundario);font:var(--pequeno);margin-bottom:var(--espacio-3)}
+
+/* ---------- Pie ---------- */
+.pie{background:var(--pizarra-700);color:var(--pizarra-100);padding:var(--espacio-12) 0 var(--espacio-6);font:var(--pequeno)}
+.pie a{color:var(--hueso-100)}
+.pie-rejilla{display:grid;gap:var(--espacio-6)}
+@media (min-width:760px){.pie-rejilla{grid-template-columns:2fr 1fr 1fr}}
+.pie h2{font:var(--etiqueta);letter-spacing:.08em;text-transform:uppercase;color:var(--hueso-100);margin-bottom:var(--espacio-3)}
+.pie .marca-nombre{display:block;color:var(--hueso-100);margin-bottom:var(--espacio-2)}
+.pie ul{list-style:none;padding:0;margin:0}
+.pie li{margin-bottom:var(--espacio-2)}
+.pie-legal{border-top:1px solid var(--pizarra-500);margin-top:var(--espacio-8);padding-top:var(--espacio-4);display:flex;flex-wrap:wrap;gap:var(--espacio-2) var(--espacio-6)}
+
+/* ---------- Texto legal ---------- */
+.legal h2{margin-top:var(--espacio-8)}
+.legal h3{margin-top:var(--espacio-6)}
+
+/* ---------- Robustez en pantallas estrechas ---------- */
+.accesos>*,.dos-columnas>*,.rejilla-3>*,.fichas>*,.lineas>*,.mc-rejilla>*,.personas>*,.ejemplos>*,.pub>*,.pie-rejilla>*,.persona>div{min-width:0}
+p,li,dd,dt,h1,h2,h3,h4,a,.pendiente{overflow-wrap:break-word}
+.doi,.datos dd a,.lista-pubs a,.pie a,.persona a{overflow-wrap:anywhere}
+@media (max-width:380px){
+  .marca-sub{display:none}
+  .botones .boton{width:100%}
+  .persona{grid-template-columns:1fr}
+}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.cabecera,.pie,.botones,.menu-boton{display:none}.portada,.cabeza-pagina{background:none;color:#000}}
+
+/* ---------- Perfil del director ---------- */
+.perfil{display:grid;gap:var(--espacio-8);align-items:start}
+@media (min-width:820px){.perfil{grid-template-columns:280px 1fr;gap:var(--espacio-12)}}
+.perfil-foto{width:100%;max-width:280px;border-radius:var(--radio-2);border:1px solid var(--linea)}
+.perfil-cargo{font:600 18px/26px var(--font-texto);color:var(--pizarra-500)}
+.hitos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--espacio-4);margin:var(--espacio-6) 0;padding:var(--espacio-6) 0;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.hitos div{min-width:0}
+.hitos dt{font:var(--dato-grande);color:var(--pizarra-500)}
+.hitos dd{margin:var(--espacio-1) 0 0;font:var(--pequeno);color:var(--texto-secundario)}
+.perfil-enlaces{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:var(--espacio-2) var(--espacio-6)}
+.dirige{display:grid;gap:var(--espacio-6);align-items:center}
+@media (min-width:720px){.dirige{grid-template-columns:160px 1fr;gap:var(--espacio-8)}}
+.dirige img{width:160px;border-radius:var(--radio-2);border:1px solid var(--linea)}
+.dirige h2{margin-bottom:var(--espacio-2)}
+.perfil>*,.dirige>*{min-width:0}
+
+/* ---------- Cabecera con la marca de grupo de investigación de la EHU ----------
+   Guía de marca EHU (02.10): imagotipo EHU + «Ikerketa taldea · Grupo de investigación» + logotipo propio.
+   El logotipo oficial no se recolorea: por eso la cabecera es clara (la identidad Costa se retira junto a él). */
+.cabecera{background:var(--superficie);color:var(--texto);border-bottom:1px solid var(--linea)}
+.cabecera .contenedor{min-height:76px}
+.marca{flex-direction:row;align-items:center;gap:var(--espacio-3);color:var(--texto)}
+.marca-ehu{width:60px;height:60px;flex:none}
+.marca-grupo{display:flex;flex-direction:column;font:600 10px/13px var(--font-texto);letter-spacing:.06em;text-transform:uppercase;color:#000;border-left:1px solid #000;border-right:1px solid #000;padding:0 var(--espacio-3)}
+.marca-grupo span+span{color:#4d4d4d}
+.marca-hg{width:40px;height:40px;flex:none}
+.marca .marca-nombre{color:var(--pizarra-500);font-size:22px;line-height:26px}
+.menu-boton{border-color:var(--texto);color:var(--texto)}
+.nav a{color:var(--texto)}
+@media (min-width:880px){
+  .nav a{color:var(--texto)}
+  .nav a:hover{background:var(--hueso-100)}
+  .nav a[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--pizarra-500)}
+}
+.nav.abierto{background:var(--superficie);border-bottom:1px solid var(--linea)}
+.nav.abierto a{border-bottom-color:var(--linea)}
+@media (max-width:1040px) and (min-width:880px){.marca .marca-nombre{display:none}}
+@media (max-width:560px){.marca-grupo{display:none}.marca-ehu{width:48px;height:48px}}
+@media (max-width:360px){.marca .marca-nombre{display:none}}
+
+.sello-logo{width:88px;height:88px;flex:none}
