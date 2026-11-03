@@ -425,3 +425,16 @@ p,li,dd,dt,h1,h2,h3,h4,a,.pendiente{overflow-wrap:break-word}
 }
 @media (max-width:700px){.marca-grupo{display:none}}
 @media (max-width:440px){.marca .marca-nombre{display:none}}
+
+/* ---------- Selector de idioma en franja superior, a la derecha (2026-11-04) ---------- */
+.barra-sup{background:var(--pizarra-500)}
+.barra-sup .contenedor{display:flex;justify-content:flex-end;align-items:center;min-height:30px}
+.cabecera .barra-sup .contenedor{min-height:30px}
+.barra-sup .idiomas{display:flex;gap:2px;font:600 12px/1 var(--font-texto);letter-spacing:.06em}
+.barra-sup .idiomas a{padding:5px 8px;border-radius:var(--radio-1);color:var(--pizarra-100);text-decoration:none}
+.barra-sup .idiomas a:hover{background:var(--pizarra-700);color:var(--hueso-000)}
+.barra-sup .idiomas a[aria-current="true"]{background:var(--hueso-100);color:var(--pizarra-500)}
+/* Sin el selector en la fila de la cabecera, en teléfonos vuelven a caber el hexágono y el nombre */
+@media (min-width:360px) and (max-width:560px){.marca-hg{display:block}}
+@media (min-width:360px) and (max-width:440px){.marca .marca-nombre{display:inline}}
+@media (min-width:600px) and (max-width:700px){.marca-grupo{display:flex}}
