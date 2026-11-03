@@ -440,3 +440,70 @@ p,li,dd,dt,h1,h2,h3,h4,a,.pendiente{overflow-wrap:break-word}
 @media (min-width:600px) and (max-width:700px){.marca-grupo{display:flex}}
 
 .hitos{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+
+/* ---------- «Una red de trabajo»: estructura, colaboración, TRL y One Health ---------- */
+.ecosistema{display:grid;gap:var(--espacio-6);margin-top:var(--espacio-6)}
+@media (min-width:960px){.ecosistema{grid-template-columns:240px 1fr;gap:var(--espacio-8)}}
+.ecosistema>*{min-width:0}
+.eco-col h3{font:600 18px/24px var(--font-titulos);margin-bottom:var(--espacio-3)}
+.eco-chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--espacio-2)}
+@media (min-width:960px){.eco-chips{flex-direction:column}}
+.eco-chips li{margin:0;background:var(--pizarra-500);color:var(--hueso-000);font:600 14px/18px var(--font-texto);padding:var(--espacio-2) var(--espacio-3);border-radius:var(--radio-1)}
+.eco-grupo{background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio-2);padding:var(--espacio-4)}
+@media (min-width:720px){.eco-grupo{padding:var(--espacio-6)}}
+.eco-lema{border-bottom:1px solid var(--linea);padding-bottom:var(--espacio-3);margin-bottom:var(--espacio-4)}
+.eco-lema .etiqueta{margin-bottom:var(--espacio-1)}
+.eco-lema strong{display:block;font:600 19px/26px var(--font-titulos);color:var(--pizarra-500)}
+.eco-cols-cab{display:none}
+@media (min-width:720px){.eco-cols-cab{display:grid;grid-template-columns:1fr 1fr;gap:var(--espacio-8);font:var(--etiqueta);letter-spacing:.08em;text-transform:uppercase;color:var(--texto-secundario);margin-bottom:var(--espacio-2)}}
+.eco-dir{background:var(--pizarra-500);color:var(--hueso-000);font:600 15px/20px var(--font-texto);text-align:center;padding:var(--espacio-2);border-radius:var(--radio-1)}
+@media (min-width:720px){.eco-dir{width:calc(50% - var(--espacio-4))}}
+.eco-filas{list-style:none;padding:0;margin:var(--espacio-2) 0 0;display:grid;gap:var(--espacio-2)}
+.eco-filas li{margin:0;display:grid;gap:var(--espacio-2)}
+@media (min-width:720px){.eco-filas li{grid-template-columns:1fr 1fr;gap:var(--espacio-8);position:relative}
+  .eco-filas li::after{content:"";position:absolute;left:calc(50% - 22px);top:50%;width:44px;height:2px;background:var(--mar-500)}}
+.eco-area,.eco-modo{border-radius:var(--radio-1);padding:var(--espacio-3) var(--espacio-4);min-width:0}
+.eco-area{background:var(--pizarra-050);border-left:4px solid var(--pizarra-500)}
+.eco-modo{background:var(--mar-050);border-left:4px solid var(--mar-500)}
+.eco-area strong,.eco-modo strong{display:block;font:600 15px/20px var(--font-texto);color:var(--pizarra-500);margin-bottom:2px}
+.eco-modo strong{color:var(--mar-900)}
+.eco-area span,.eco-modo span{font:var(--pequeno);color:var(--texto)}
+
+/* Tabla de madurez tecnológica (TRL) */
+.trl{margin-top:var(--espacio-3);background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio-2);padding:var(--espacio-4);overflow:hidden}
+.trl-fases,.trl-escala,.trl-fila{display:grid;grid-template-columns:150px repeat(9,minmax(0,1fr));column-gap:2px;align-items:center}
+.trl-fase{font:600 12px/16px var(--font-texto);color:var(--hueso-000);text-align:center;padding:6px 4px;border-radius:var(--radio-1)}
+.trl-fase.f0{background:var(--pizarra-300)}.trl-fase.f1{background:var(--pizarra-500)}.trl-fase.f2{background:var(--pizarra-700)}
+.trl-escala{margin:var(--espacio-1) 0 var(--espacio-2)}
+.trl-n{text-align:center;font:600 12px/16px var(--font-datos);color:var(--texto-secundario)}
+.trl-fila{margin-top:6px}
+.trl-fila>*{grid-row:1}
+.trl-nombre{font:600 14px/18px var(--font-texto);color:var(--pizarra-500);padding-right:var(--espacio-2)}
+.trl-pista{height:30px;background:var(--pizarra-050);border-radius:var(--radio-1)}
+.trl-actual,.trl-objetivo{height:30px;display:flex;align-items:center;justify-content:center;font:600 12px/1 var(--font-texto);white-space:nowrap;overflow:hidden;border-radius:var(--radio-1)}
+.trl-actual{background:var(--pizarra-500);color:var(--hueso-000);z-index:1}
+.trl-objetivo{background:var(--mar-100);color:var(--mar-900)}
+@media (max-width:719px){
+  .trl{padding:var(--espacio-3)}
+  .trl-fases,.trl-escala,.trl-fila{grid-template-columns:repeat(9,minmax(0,1fr))}
+  .trl-fases .trl-fase{grid-column-start:auto!important}
+  .trl-fase{font-size:10px;padding:4px 2px}
+  .trl-fases .f0{grid-column:1/5!important}.trl-fases .f1{grid-column:5/8!important}.trl-fases .f2{grid-column:8/10!important}
+  .trl-escala .trl-n{grid-column:auto!important}
+  .trl-fila{grid-template-rows:auto 30px;row-gap:4px;margin-top:var(--espacio-3)}
+  .trl-nombre{grid-row:1!important;grid-column:1/-1!important}
+  .trl-pista,.trl-actual,.trl-objetivo{grid-row:2!important}
+  .trl-pista{grid-column:1/-1!important}
+  .trl-actual,.trl-objetivo{font-size:11px}
+}
+
+/* One Health */
+.onehealth{margin-top:var(--espacio-8);background:var(--pizarra-500);color:var(--hueso-100);border-radius:var(--radio-2);padding:var(--espacio-6)}
+.onehealth h3{color:var(--hueso-000);margin-bottom:var(--espacio-2)}
+.onehealth p{margin:0 0 var(--espacio-1)}
+.onehealth .pequeno{color:var(--pizarra-100);font-style:italic}
+
+html{scroll-padding-top:8rem}
+
+.trl-res{display:none}
+@media (max-width:719px){.trl-res{display:block;font:var(--pequeno);font-weight:400;color:var(--texto-secundario)}.trl-actual,.trl-objetivo{font-size:0}}
