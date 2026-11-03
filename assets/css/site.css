@@ -295,3 +295,117 @@ p,li,dd,dt,h1,h2,h3,h4,a,.pendiente{overflow-wrap:break-word}
   .menu-boton{padding:.4rem .6rem;gap:.35rem}
 }
 @media (max-width:400px){.marca-ehu{width:42px;height:42px}}
+
+/* =====================================================================
+   Componentes visuales (rediseño 2026-11-03 noche)
+   ===================================================================== */
+
+/* ---------- Selector de idioma ---------- */
+.cabecera-der{display:flex;align-items:center;gap:var(--espacio-2)}
+.idiomas{display:flex;gap:2px;font:600 13px/1 var(--font-texto);letter-spacing:.04em}
+.idiomas a{display:inline-block;padding:6px 7px;border-radius:var(--radio-1);text-decoration:none;color:var(--texto-secundario)}
+.idiomas a[aria-current="true"]{color:var(--hueso-000);background:var(--pizarra-500)}
+.idiomas a:hover{background:var(--hueso-100)}
+.idiomas a[aria-current="true"]:hover{background:var(--pizarra-700)}
+@media (max-width:560px){.idiomas a{padding:5px 4px;font-size:12px}}
+
+/* ---------- Portada con figura ---------- */
+.portada .contenedor{display:grid;gap:var(--espacio-8);align-items:center}
+@media (min-width:980px){.portada .contenedor{grid-template-columns:1.15fr .85fr}}
+.portada-figura img{width:100%;max-width:440px;margin-inline:auto}
+@media (max-width:979px){.portada-figura{display:none}}
+.lema{font:600 13px/18px var(--font-texto);letter-spacing:.08em;text-transform:uppercase;color:var(--pizarra-100);margin-top:var(--espacio-6)}
+
+/* ---------- Usos aplicados ---------- */
+.usos{display:grid;gap:var(--espacio-6)}
+@media (min-width:860px){.usos{grid-template-columns:repeat(3,1fr)}}
+.uso{border-top:2px solid var(--pizarra-500);padding-top:var(--espacio-4)}
+.uso .etiqueta{margin-bottom:var(--espacio-2)}
+.uso h3{font:600 20px/26px var(--font-titulos)}
+.uso p{margin:0}
+
+/* ---------- Flujo en pasos ---------- */
+.flujo{list-style:none;padding:0;margin:var(--espacio-4) 0 var(--espacio-6);display:grid;gap:var(--espacio-4);counter-reset:paso}
+@media (min-width:820px){.flujo{grid-template-columns:repeat(var(--pasos,4),1fr);gap:0}}
+.flujo li{position:relative;margin:0;padding:0 0 0 52px;counter-increment:paso}
+.flujo li::before{content:counter(paso);position:absolute;left:0;top:0;width:36px;height:36px;display:grid;place-items:center;background:var(--pizarra-500);color:var(--hueso-000);font:600 15px/1 var(--font-datos);border-radius:50%}
+.flujo.mar li::before{background:var(--mar-700)}
+.flujo li strong{display:block;color:var(--pizarra-500);margin-bottom:2px}
+.flujo li span{display:block;font:var(--pequeno);color:var(--texto-secundario)}
+@media (min-width:820px){
+  .flujo li{padding:52px var(--espacio-4) 0 0}
+  .flujo li::after{content:"";position:absolute;top:18px;left:44px;right:8px;height:2px;background:var(--linea)}
+  .flujo li:last-child::after{display:none}
+}
+
+/* ---------- Servicio con precio ---------- */
+.servicio-cabeza{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:var(--espacio-3);margin-bottom:var(--espacio-4)}
+.servicio-cabeza h2{margin:0}
+.precio{font:var(--dato-grande);color:var(--pizarra-500);white-space:nowrap;text-align:right}
+.precio small{display:block;font:var(--pequeno);color:var(--texto-secundario)}
+.etiqueta-tipo{display:inline-block;font:var(--etiqueta);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:var(--radio-1);margin-bottom:var(--espacio-2)}
+.etiqueta-tipo.gen{background:var(--pizarra-050);color:var(--pizarra-500)}
+.etiqueta-tipo.mic{background:var(--mar-050);color:var(--mar-900)}
+
+/* ---------- Resultado de ejemplo (barras de rango de los informes) ---------- */
+.resultados{display:grid;gap:var(--espacio-4);margin-top:var(--espacio-3)}
+@media (min-width:860px){.resultados{grid-template-columns:repeat(3,1fr)}}
+.resultado{background:var(--fondo);border:1px solid var(--linea);border-radius:var(--radio-2);padding:var(--espacio-4)}
+.resultado h4{margin:0 0 var(--espacio-1)}
+.resultado .que{font:var(--pequeno);color:var(--texto-secundario);margin:0 0 var(--espacio-3)}
+.rango{position:relative;height:12px;margin:30px 0 6px;background:var(--piedra-500)}
+.rango .ref{position:absolute;top:0;bottom:0;background:var(--mar-300)}
+.rango .valor{position:absolute;top:-8px;width:3px;height:28px;background:var(--pizarra-500);transform:translateX(-1px)}
+.rango .valor::after{content:attr(data-v);position:absolute;bottom:31px;left:50%;transform:translateX(-50%);font:600 12px/1 var(--font-datos);color:var(--pizarra-500);white-space:nowrap}
+.rango-ejes{display:flex;justify-content:space-between;font:400 11px/14px var(--font-datos);color:var(--piedra-700)}
+.estado{font:600 14px/20px var(--font-texto);color:var(--pizarra-500);margin:var(--espacio-2) 0 var(--espacio-1)}
+.genotipo{display:flex;align-items:center;gap:var(--espacio-3);margin:var(--espacio-3) 0 var(--espacio-1)}
+.genotipo .alelos{display:inline-flex;gap:3px}
+.genotipo .alelos b{display:grid;place-items:center;width:30px;height:30px;font:600 15px/1 var(--font-datos);background:var(--pizarra-500);color:var(--hueso-000);border-radius:var(--radio-1)}
+.genotipo .alelos b.alt{background:var(--pizarra-100);color:var(--pizarra-700)}
+.genotipo .gen{font:var(--dato);color:var(--texto-secundario)}
+.evidencia{display:flex;flex-wrap:wrap;align-items:center;gap:var(--espacio-2);font:var(--pequeno);color:var(--texto-secundario);margin-top:var(--espacio-2);padding-top:var(--espacio-2);border-top:1px solid var(--linea)}
+.evidencia .barras{display:inline-flex;gap:2px}
+.evidencia .barras i{display:block;width:10px;height:10px;background:var(--piedra-300)}
+.evidencia .barras i.on{background:var(--pizarra-500)}
+.mic .evidencia .barras i.on{background:var(--mar-700)}
+
+/* ---------- Diagrama del método patentado ---------- */
+.metodo{list-style:none;padding:0;margin:var(--espacio-4) 0;display:grid;gap:var(--espacio-2)}
+@media (min-width:760px){.metodo{grid-template-columns:repeat(4,1fr);gap:var(--espacio-4)}}
+.metodo li{margin:0;position:relative;background:var(--superficie);border:1px solid var(--linea);border-top:3px solid var(--mar-500);border-radius:var(--radio-2);padding:var(--espacio-3) var(--espacio-4)}
+.metodo li:nth-child(3){border-top-color:var(--pizarra-500)}
+.metodo li:last-child{background:var(--pizarra-500);border-color:var(--pizarra-500);color:var(--hueso-100)}
+.metodo li:last-child strong{color:var(--hueso-000)}
+.metodo strong{display:block;font:600 15px/20px var(--font-texto);color:var(--pizarra-500);margin-bottom:2px}
+.metodo span{font:var(--pequeno)}
+@media (min-width:760px){.metodo li:not(:last-child)::after{content:"";position:absolute;right:-12px;top:50%;width:8px;height:8px;border-top:2px solid var(--piedra-700);border-right:2px solid var(--piedra-700);transform:translateY(-50%) rotate(45deg)}}
+
+/* ---------- Libros con portada ---------- */
+.libros{display:grid;gap:var(--espacio-6)}
+@media (min-width:860px){.libros{grid-template-columns:1fr 1fr}}
+.libro{display:grid;grid-template-columns:120px 1fr;gap:var(--espacio-4);align-items:start}
+.libro img{width:120px;height:auto;border:1px solid var(--linea)}
+.libro h3{font:600 19px/25px var(--font-titulos);margin-bottom:var(--espacio-2)}
+.libro>div{min-width:0}
+@media (max-width:420px){.libro{grid-template-columns:88px 1fr}.libro img{width:88px}}
+
+/* ---------- Grupo: cifras y red de colaboración ---------- */
+.cifras{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--linea);border:1px solid var(--linea);border-radius:var(--radio-2);overflow:hidden;margin:var(--espacio-6) 0}
+@media (min-width:760px){.cifras{grid-template-columns:repeat(4,1fr)}}
+.cifra{background:var(--superficie);padding:var(--espacio-4) var(--espacio-4) var(--espacio-6);min-width:0}
+.cifra b{display:block;font:var(--dato-grande);color:var(--pizarra-500)}
+.cifra span{display:block;font:var(--pequeno);color:var(--texto-secundario);margin-top:var(--espacio-1)}
+.red{display:grid;gap:var(--espacio-6);align-items:center}
+@media (min-width:860px){.red{grid-template-columns:1fr 1fr}}
+.red svg{width:100%;max-width:600px;height:auto;margin-inline:auto;display:block}
+.red>*{min-width:0}
+
+/* ---------- Ubicación ---------- */
+.ubicacion figure{margin:0 0 var(--espacio-4)}
+.ubicacion img{width:100%;border-radius:var(--radio-2);border:1px solid var(--linea)}
+.ubicacion figcaption{font:400 12px/16px var(--font-texto);color:var(--texto-secundario);margin-top:var(--espacio-1)}
+.ubicacion figcaption a{color:inherit}
+.usos>*,.resultados>*,.metodo>*,.libros>*,.cifras>*{min-width:0}
+
+.resultado .lectura-res{font:var(--pequeno);color:var(--texto);margin:var(--espacio-2) 0 0}

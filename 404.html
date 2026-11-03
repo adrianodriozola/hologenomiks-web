@@ -6,6 +6,16 @@
 <title>Página no encontrada · Hologenomiks</title>
 <meta name="description" content="Página no encontrada.">
 <meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Hologenomiks · EHU">
+<meta property="og:title" content="Página no encontrada · Hologenomiks">
+<meta property="og:description" content="Página no encontrada.">
+<meta property="og:url" content="https://hologenomiks.eus/404.html">
+<meta property="og:image" content="https://hologenomiks.eus/assets/img/og-hologenomiks.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#213A52">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +27,7 @@
 <body>
 <a class="salto" href="#contenido">Saltar al contenido</a>
 
-<header class="cabecera sobre-oscuro">
+<header class="cabecera">
   <div class="contenedor">
     <a class="marca" href="index.html" aria-label="Hologenomiks, grupo de investigación de la EHU. Inicio">
       <img class="marca-ehu" src="assets/img/ehu-logotipo.svg" alt="EHU" width="60" height="60">
@@ -25,10 +35,8 @@
       <img class="marca-hg" src="assets/img/hg-logo.svg" alt="" width="40" height="40">
       <span class="marca-nombre">Hologenomiks</span>
     </a>
-    <button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav-principal">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Menú
-    </button>
-    <nav class="nav" id="nav-principal" aria-label="Principal">
+    <div class="cabecera-der">
+      <nav class="nav" id="nav-principal" aria-label="Principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="investigacion.html">I+D</a></li>
@@ -36,7 +44,12 @@
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="equipo.html">Equipo y contacto</a></li>
       </ul>
-    </nav>
+      </nav>
+      <div class="idiomas" role="navigation" aria-label="Idioma"><a href="index.html" hreflang="es" lang="es" aria-current="true" title="Castellano">ES</a><a href="eu/index.html" hreflang="eu" lang="eu" title="Euskara">EU</a><a href="en/index.html" hreflang="en" lang="en" title="English">EN</a></div>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav-principal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Menú
+      </button>
+    </div>
   </div>
 </header>
 
@@ -53,6 +66,7 @@
 <p><a class="boton" href="index.html">Volver al inicio</a></p>
     </div>
   </section>
+
 </main>
 
 <footer class="pie sobre-oscuro">
@@ -60,7 +74,7 @@
     <div class="pie-rejilla">
       <div>
         <span class="marca-nombre">Hologenomiks</span>
-        <p>Dpto. de Genética, Antropología Física y Fisiología Animal<br>Facultad de Ciencia y Tecnología<br>Barrio Sarriena s/n · 48940 Leioa (Bizkaia)</p>
+        <p>Departamento de Genética, Antropología Física y Fisiología Animal<br>Facultad de Ciencia y Tecnología · EHU<br>Barrio Sarriena s/n · 48940 Leioa (Bizkaia)</p>
       </div>
       <div>
         <h2>Secciones</h2>

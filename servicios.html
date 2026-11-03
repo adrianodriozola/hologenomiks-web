@@ -4,16 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Servicios y desarrollos · Hologenomiks (EHU)</title>
-<meta name="description" content="Análisis genético a partir de raw data, análisis de microbiota intestinal y secuenciación y bioinformática a medida para investigación y empresas. Contratación a través de la OTRI de la EHU.">
+<meta name="description" content="Análisis genético a partir de raw data y análisis del microbioma intestinal por secuenciación de lectura larga, con informe interpretado; secuenciación y bioinformática para proyectos de I+D.">
 <link rel="canonical" href="https://hologenomiks.eus/servicios.html">
 <link rel="alternate" hreflang="es" href="https://hologenomiks.eus/servicios.html">
+<link rel="alternate" hreflang="eu" href="https://hologenomiks.eus/eu/servicios.html">
+<link rel="alternate" hreflang="en" href="https://hologenomiks.eus/en/servicios.html">
+<link rel="alternate" hreflang="x-default" href="https://hologenomiks.eus/servicios.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Hologenomiks · EHU">
 <meta property="og:title" content="Servicios y desarrollos · Hologenomiks (EHU)">
-<meta property="og:description" content="Análisis genético y de microbioma con informe interpretado, y secuenciación y bioinformática para proyectos de investigación y empresas.">
+<meta property="og:description" content="Análisis genético a partir de raw data y análisis del microbioma intestinal por secuenciación de lectura larga, con informe interpretado; secuenciación y bioinformática para proyectos de I+D.">
 <meta property="og:url" content="https://hologenomiks.eus/servicios.html">
 <meta property="og:image" content="https://hologenomiks.eus/assets/img/og-hologenomiks.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#213A52">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -26,7 +31,7 @@
 <body>
 <a class="salto" href="#contenido">Saltar al contenido</a>
 
-<header class="cabecera sobre-oscuro">
+<header class="cabecera">
   <div class="contenedor">
     <a class="marca" href="index.html" aria-label="Hologenomiks, grupo de investigación de la EHU. Inicio">
       <img class="marca-ehu" src="assets/img/ehu-logotipo.svg" alt="EHU" width="60" height="60">
@@ -34,10 +39,8 @@
       <img class="marca-hg" src="assets/img/hg-logo.svg" alt="" width="40" height="40">
       <span class="marca-nombre">Hologenomiks</span>
     </a>
-    <button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav-principal">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Menú
-    </button>
-    <nav class="nav" id="nav-principal" aria-label="Principal">
+    <div class="cabecera-der">
+      <nav class="nav" id="nav-principal" aria-label="Principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="investigacion.html">I+D</a></li>
@@ -45,7 +48,12 @@
         <li><a href="servicios.html" aria-current="page">Servicios</a></li>
         <li><a href="equipo.html">Equipo y contacto</a></li>
       </ul>
-    </nav>
+      </nav>
+      <div class="idiomas" role="navigation" aria-label="Idioma"><a href="servicios.html" hreflang="es" lang="es" aria-current="true" title="Castellano">ES</a><a href="eu/servicios.html" hreflang="eu" lang="eu" title="Euskara">EU</a><a href="en/servicios.html" hreflang="en" lang="en" title="English">EN</a></div>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav-principal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Menú
+      </button>
+    </div>
   </div>
 </header>
 
@@ -54,229 +62,205 @@
     <div class="contenedor">
       <span class="etiqueta">Transferencia</span>
       <h1>Servicios y desarrollos</h1>
-      <p>Análisis genéticos y de microbioma con informe interpretado, y apoyo técnico a proyectos de investigación y empresas. Todos los servicios se contratan a través de la EHU.</p>
+      <p>Análisis genéticos y de microbioma con informe interpretado según la evidencia disponible, y apoyo técnico y científico a proyectos de investigación y empresas. Todos los servicios se prestan y facturan a través de la EHU.</p>
     </div>
   </div>
 
-  <section class="seccion" aria-labelledby="t-antes">
-    <div class="contenedor">
-      <div class="nota importante lectura">
-        <p><strong>Antes de solicitar un análisis.</strong> Nuestros informes no son pruebas diagnósticas ni sustituyen la valoración de un profesional sanitario. Describen asociaciones publicadas en la literatura científica, que en su mayoría tienen un efecto pequeño y dependen también de la alimentación, la actividad física, el entorno y muchas otras variantes. Si tiene una enfermedad o un síntoma, consulte a su médico.</p>
-        <p style="margin:0">Recomendamos leer el informe con un profesional de la salud, la nutrición o el deporte.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== ANÁLISIS ===================== -->
-  <section class="seccion" id="analisis" aria-labelledby="t-analisis" style="padding-top:0;border-top:0">
+  <section class="seccion" id="analisis" aria-labelledby="t-analisis">
     <div class="contenedor">
       <div class="seccion-cabeza">
         <h2 id="t-analisis">Análisis para personas y profesionales</h2>
+        <p>Pensados para que un profesional de la salud, la nutrición o el deporte, o la propia persona acompañada por él, disponga de información biológica individual con la que orientar y medir una intervención.</p>
       </div>
 
-      <!-- Genético -->
       <article class="servicio" id="genetico" aria-labelledby="t-gen">
-        <h2 id="t-gen">Análisis genético a partir de raw data</h2>
-        <p class="lectura">Si ya se ha hecho un test genético de consumo (por ejemplo, 23andMe, MyHeritage u otras compañías similares), puede descargar su archivo de datos brutos (<em>raw data</em>). Sin una nueva muestra, analizamos ese archivo e interpretamos las variantes asociadas a más de 180 rasgos.</p>
-        <div class="rejilla-3">
+        <div class="servicio-cabeza">
           <div>
-            <h3>Cómo se hace</h3>
-            <ol class="pasos">
-              <li>Sube su archivo de raw data en el formulario de solicitud, junto con el consentimiento informado. El archivo se transfiere cifrado y se identifica con un código de muestra; sus datos personales se guardan por separado.</li>
-              <li>Comprobamos el formato y la calidad del archivo y extraemos las variantes de interés.</li>
-              <li>Interpretamos cada variante con la evidencia publicada (estudios de asociación y bases de datos de referencia).</li>
-              <li>Elaboramos el informe y se lo enviamos.</li>
-            </ol>
+            <span class="etiqueta-tipo gen">Genética del hospedador</span>
+            <h2 id="t-gen">Análisis genético a partir de raw data</h2>
           </div>
+          <p class="precio">150 €<small>IVA incluido</small></p>
+        </div>
+        <p class="lectura">Si ya dispone de un estudio genético de consumo (23andMe, MyHeritage u otras compañías), interpretamos su archivo de datos brutos sin necesidad de una nueva muestra: más de 180 rasgos de nutrición, metabolismo, composición corporal, respuesta al ejercicio y recuperación.</p>
+        <h3>Cómo se hace</h3>
+        <ol class="flujo" style="--pasos:4">
+          <li><strong>Solicitud</strong><span>Formulario y consentimiento informado específico.</span></li>
+          <li><strong>Envío seguro del archivo</strong><span>El raw data se identifica con un código de muestra; los datos personales se guardan por separado.</span></li>
+          <li><strong>Control de calidad e interpretación</strong><span>Cada variante se valora con la literatura científica y bases de datos de referencia.</span></li>
+          <li><strong>Informe</strong><span>Resultados por categorías, con la tendencia de cada rasgo y su nivel de evidencia.</span></li>
+        </ol>
+        <div class="dos-columnas">
           <div>
             <h3>Para qué sirve</h3>
-            <p>Para conocer tendencias de origen genético en rasgos de nutrición, metabolismo, composición corporal y respuesta al ejercicio, y para orientar con un profesional decisiones de alimentación y entrenamiento.</p>
-            <p>No sirve para diagnosticar enfermedades ni para descartar riesgos. Los chips de los tests de consumo no están diseñados para uso clínico.</p>
+            <p>Para identificar predisposiciones con aplicación práctica (tolerancia a nutrientes, metabolismo de compuestos como la cafeína, respuesta al entrenamiento de fuerza o resistencia) y priorizar, con un profesional, las decisiones de alimentación, suplementación y entrenamiento.</p>
           </div>
           <div>
-            <h3>Qué incluye el informe</h3>
+            <h3>Qué recibe</h3>
             <ul>
-              <li>Resultados agrupados en categorías: salud, dieta, nutrientes, suplementación, analítica, composición corporal, actividad física saludable, resistencia, potencia, y fatiga y recuperación.</li>
-              <li>Para cada rasgo, una puntuación que indica la tendencia respecto a la población general y una explicación en lenguaje claro.</li>
-              <li>Ficha técnica con la lista de rasgos analizados.</li>
+              <li>Informe con los resultados agrupados en categorías: salud, dieta, nutrientes, suplementación, analítica, composición corporal, actividad física, resistencia, potencia, y fatiga y recuperación.</li>
+              <li>Para cada rasgo: genotipo, tendencia respecto a la población general, explicación y nivel de evidencia.</li>
+              <li>Ficha técnica de los rasgos analizados.</li>
             </ul>
           </div>
         </div>
-        <h3 style="margin-top:1.5rem">Ejemplos de rasgos <span class="ilustrativo">Ejemplos ilustrativos</span></h3>
-        <div class="ejemplos">
-          <div class="ejemplo">
+        <h3>Resultados de ejemplo <span class="ilustrativo">Ilustrativos</span></h3>
+        <div class="resultados">
+          <div class="resultado">
             <h4>Persistencia de la lactasa</h4>
-            <p>Variantes cercanas al gen <i>LCT</i> se asocian a mantener o no en la edad adulta la capacidad de digerir la lactosa.</p>
-            <p class="lectura-res">Lectura posible: «tendencia a la persistencia de la lactasa». La tolerancia real depende también de la dosis y de la microbiota.</p>
+            <p class="que">Capacidad de digerir lactosa en la edad adulta.</p>
+            <div class="genotipo"><span class="alelos"><b>C</b><b class="">T</b></span><span class="gen">LCT · rs4988235</span></div>
+            <p class="estado">Persistencia de la lactasa probable</p>
+            <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><span>Evidencia alta: asociación replicada en múltiples poblaciones europeas.</span></div>
+            <p class="lectura-res">La tolerancia real depende también de la dosis y de la microbiota.</p>
           </div>
-          <div class="ejemplo">
+          <div class="resultado">
             <h4>Metabolismo de la cafeína</h4>
-            <p>Variantes del gen <i>CYP1A2</i> se asocian a una eliminación más rápida o más lenta de la cafeína.</p>
-            <p class="lectura-res">Lectura posible: «tendencia a un metabolismo lento». Sirve para valorar la tolerancia a la cafeína, no para fijar dosis.</p>
+            <p class="que">Velocidad de eliminación de la cafeína.</p>
+            <div class="genotipo"><span class="alelos"><b>A</b><b class="alt">C</b></span><span class="gen">CYP1A2 · rs762551</span></div>
+            <p class="estado">Metabolismo intermedio</p>
+            <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><span>Evidencia moderada: efecto consistente, modulado por tabaco y otros factores.</span></div>
+            <p class="lectura-res">Orienta la valoración de la tolerancia; no sirve para fijar dosis.</p>
           </div>
-          <div class="ejemplo">
-            <h4>Fibras musculares</h4>
-            <p>La variante R577X del gen <i>ACTN3</i> se asocia a diferencias en la proporción de fibras musculares rápidas.</p>
-            <p class="lectura-res">Lectura posible: «tendencia a mayor proporción de fibras rápidas». Explica una parte pequeña del rendimiento.</p>
+          <div class="resultado">
+            <h4>Tipo de fibra muscular</h4>
+            <p class="que">Proporción relativa de fibras rápidas.</p>
+            <div class="genotipo"><span class="alelos"><b>C</b><b class="alt">T</b></span><span class="gen">ACTN3 · rs1815739 (R577X)</span></div>
+            <p class="estado">Genotipo RX: perfil mixto</p>
+            <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><span>Evidencia moderada: asociación con potencia en deportistas; efecto pequeño.</span></div>
+            <p class="lectura-res">Explica una parte pequeña del rendimiento, que es poligénico y depende del entrenamiento.</p>
           </div>
         </div>
-        <p class="pequeno" style="margin-top:1rem">Estos ejemplos no proceden de ninguna persona analizada. Son orientativos y no reflejan necesariamente el contenido exacto del informe.</p>
       </article>
 
-      <!-- Microbioma -->
-      <article class="servicio" id="microbioma" aria-labelledby="t-mic">
-        <h2 id="t-mic">Análisis de microbiota intestinal</h2>
-        <p class="lectura">Analizamos la composición bacteriana de una muestra de heces y la interpretamos según la evidencia publicada. El informe de recomendaciones usa un método propio patentado (EP 4 224 486 B1) para ordenar alimentos según su capacidad potencial para favorecer las bacterias poco abundantes.</p>
-        <div class="rejilla-3">
+      <article class="servicio mic" id="microbioma" aria-labelledby="t-mic">
+        <div class="servicio-cabeza">
           <div>
-            <h3>Cómo se hace</h3>
-            <ol class="pasos">
-              <li>Recibe en casa un kit con el tubo de recogida, las instrucciones y el consentimiento informado.</li>
-              <li>Toma una pequeña muestra de heces. En el tubo con conservante se mantiene estable a temperatura ambiente durante dos meses.</li>
-              <li>La envía por correo a la Facultad de Ciencia y Tecnología.</li>
-              <li>En el laboratorio extraemos el ADN y secuenciamos el gen bacteriano 16S rRNA completo con tecnología de lectura larga (Oxford Nanopore, MinION), lo que permite identificar muchas bacterias a nivel de especie.</li>
-              <li>Clasificamos las bacterias, calculamos sus abundancias relativas y las comparamos con la literatura.</li>
-            </ol>
-            <p class="pequeno">El plazo habitual es de 7 a 10 días hábiles desde la llegada de la muestra, con un máximo de 20.</p>
+            <span class="etiqueta-tipo mic">Microbioma</span>
+            <h2 id="t-mic">Análisis del microbioma intestinal</h2>
           </div>
+          <p class="precio">220 €<small>IVA incluido</small></p>
+        </div>
+        <p class="lectura">Caracterizamos la composición del microbioma intestinal a partir de una muestra de heces mediante secuenciación del gen 16S rRNA completo con tecnología de lectura larga (Oxford Nanopore, MinION), que permite resolver numerosos taxones a nivel de especie. El informe de recomendaciones utiliza nuestro método patentado (EP 4 224 486 B1).</p>
+        <h3>Cómo se hace</h3>
+        <ol class="flujo mar" style="--pasos:4">
+          <li><strong>Kit en casa</strong><span>Tubo con conservante, instrucciones y consentimiento informado.</span></li>
+          <li><strong>Toma y envío</strong><span>La muestra es estable a temperatura ambiente durante dos meses; se envía por correo.</span></li>
+          <li><strong>Secuenciación y bioinformática</strong><span>Extracción de ADN, 16S completo en MinION, clasificación taxonómica y comparación con la referencia.</span></li>
+          <li><strong>Informes</strong><span>Plazo habitual de 7 a 10 días hábiles desde la llegada de la muestra (máximo 20).</span></li>
+        </ol>
+        <div class="dos-columnas">
           <div>
             <h3>Para qué sirve</h3>
-            <p>Para conocer la composición de su microbiota en un momento concreto, identificar bacterias poco abundantes asociadas a funciones de interés y orientar cambios en la dieta junto con un profesional.</p>
-            <p>Repetir el análisis tras una intervención permite comparar la evolución.</p>
-            <p>No diagnostica enfermedades digestivas ni de otro tipo: la presencia de una bacteria asociada a una condición no implica padecerla.</p>
+            <p>Para conocer el estado del ecosistema intestinal en un momento dado (diversidad, grupos funcionales, potencial productor de metabolitos como los ácidos grasos de cadena corta, presencia de probióticos), orientar con un profesional cambios en la dieta y la suplementación, y comparar la evolución tras una intervención.</p>
           </div>
           <div>
-            <h3>Qué incluye el informe</h3>
+            <h3>Qué recibe</h3>
             <ul>
-              <li><strong>Resultados de microbiota</strong>, organizados en categorías: salud intestinal, salud general, metabolismo y aporte energético, comparativa de dietas, actividad física, alimentos probióticos, probióticos y postbióticos (ácidos grasos de cadena corta, vitaminas y neurotransmisores).</li>
+              <li><strong>Informe de resultados</strong> por categorías: salud intestinal, salud general, metabolismo y aporte energético, comparativa de dietas, actividad física, alimentos probióticos, probióticos y postbióticos (ácidos grasos de cadena corta, vitaminas y neurotransmisores).</li>
               <li><strong>Informe de recomendaciones</strong> con un ranking personalizado de alimentos, prebióticos y probióticos.</li>
-              <li>Ficha técnica con la lista de rasgos analizados.</li>
-              <li>Opcional: informe específico de rendimiento deportivo.</li>
+              <li>Opcional: <strong>informe aplicado al rendimiento deportivo</strong> · 250 € (IVA incluido).</li>
             </ul>
           </div>
         </div>
-        <h3 style="margin-top:1.5rem">Ejemplos de rasgos <span class="ilustrativo">Ejemplos ilustrativos</span></h3>
-        <div class="ejemplos">
-          <div class="ejemplo">
-            <h4>Producción potencial de butirato</h4>
-            <p>Abundancia de bacterias capaces de producir butirato, un ácido graso de cadena corta relacionado con la función de la mucosa intestinal.</p>
-            <p class="lectura-res">Lectura posible: «abundancia baja de productoras de butirato; alimentos ricos en fibra fermentable en los primeros puestos del ranking».</p>
+        <h3>Resultados de ejemplo <span class="ilustrativo">Ilustrativos</span></h3>
+        <div class="resultados">
+          <div class="resultado">
+            <h4>Diversidad alfa</h4>
+            <p class="que">Índice de Shannon de la muestra.</p>
+            <div class="rango" role="img" aria-label="Dentro del rango de referencia"><span class="ref" style="left:35%;width:35%"></span><span class="valor" style="left:52%" data-v="3,9"></span></div>
+            <div class="rango-ejes"><span>2,0</span><span>referencia</span><span>5,5</span></div>
+            <p class="estado">Dentro del rango de referencia</p>
+            <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><span>Evidencia moderada: asociación con salud en estudios observacionales.</span></div>
+            <p class="lectura-res">Útil sobre todo para comparar la evolución en la misma persona.</p>
           </div>
-          <div class="ejemplo">
-            <h4>Comparativa de dietas</h4>
-            <p>Bacterias cuya abundancia se ha asociado a distintos patrones de dieta (mediterránea, alta en fibra, cetogénica, baja en FODMAP, entre otros).</p>
-            <p class="lectura-res">Lectura posible: «perfil más próximo al asociado a dietas altas en fibra». No indica qué dieta es mejor para cada persona.</p>
+          <div class="resultado">
+            <h4>Productoras de butirato</h4>
+            <p class="que">Abundancia relativa de taxones con capacidad de producir butirato.</p>
+            <div class="rango" role="img" aria-label="Por debajo del rango de referencia"><span class="ref" style="left:25%;width:50%"></span><span class="valor" style="left:16%" data-v="P16"></span></div>
+            <div class="rango-ejes"><span>P0</span><span>P25–P75</span><span>P100</span></div>
+            <p class="estado">Por debajo del rango de referencia</p>
+            <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><span>Evidencia moderada-alta: respuesta a la fibra fermentable en estudios de intervención.</span></div>
+            <p class="lectura-res">El ranking prioriza alimentos con fibras fermentables asociadas a estos taxones.</p>
           </div>
-          <div class="ejemplo">
-            <h4>Probióticos tradicionales</h4>
-            <p>Presencia de géneros como <i>Bifidobacterium</i> y <i>Lactobacillus</i>, y de probióticos de nueva generación.</p>
-            <p class="lectura-res">Lectura posible: «presencia baja de <i>Bifidobacterium</i>». La elección de un suplemento corresponde al profesional que le atiende.</p>
+          <div class="resultado">
+            <h4><i>Bifidobacterium</i></h4>
+            <p class="que">Abundancia relativa del género.</p>
+            <div class="rango" role="img" aria-label="Dentro del rango de referencia"><span class="ref" style="left:25%;width:50%"></span><span class="valor" style="left:44%" data-v="P44"></span></div>
+            <div class="rango-ejes"><span>P0</span><span>P25–P75</span><span>P100</span></div>
+            <p class="estado">Dentro del rango de referencia</p>
+            <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><span>Evidencia moderada: modulable con prebióticos en ensayos controlados.</span></div>
+            <p class="lectura-res">La elección de un probiótico corresponde al profesional que le atiende.</p>
           </div>
         </div>
-        <p class="pequeno" style="margin-top:1rem">Estos ejemplos no proceden de ninguna persona analizada. La microbiota cambia con el tiempo y una sola muestra refleja un momento concreto.</p>
+        <p class="pequeno secundario" style="margin-top:1rem">Escala de evidencia: tres barras, asociaciones replicadas en estudios amplios o metaanálisis; dos, asociaciones consistentes en varios estudios; una, evidencia inicial. Los ejemplos no proceden de ninguna persona analizada.</p>
       </article>
 
-      <!-- Contratación -->
-      <div class="dos-columnas" id="solicitar">
+      <div class="nota lectura">
+        <p style="margin:0">Los informes no son pruebas diagnósticas ni sustituyen la valoración de un profesional sanitario. Sirven para disponer de información biológica individual con la que orientar, junto con un profesional de la salud, la nutrición o el deporte, decisiones sobre alimentación, suplementación, entrenamiento y descanso, y para medir la respuesta a esas decisiones a lo largo del tiempo. Si tiene una enfermedad o síntomas, consulte a su médico.</p>
+      </div>
+
+      <div class="dos-columnas" id="solicitar" style="margin-top:3rem">
         <div>
           <h2>Cómo se contrata</h2>
-          <p>Los análisis los presta el grupo como servicio de la universidad. Se contratan y facturan a través de la <strong>Oficina de Transferencia de Resultados de Investigación (OTRI) de la EHU</strong>. Para emitir la factura necesitamos los datos fiscales de la empresa o una copia del DNI de la persona solicitante.</p>
-          <h3>Precios</h3>
-          <dl class="datos precios">
-            <dt>Análisis genético a partir de raw data</dt><dd class="dato">150 €</dd>
-            <dt>Análisis de microbiota intestinal</dt><dd class="dato">220 €</dd>
-            <dt>Informe de microbiota aplicado al rendimiento deportivo</dt><dd class="dato">250 €</dd>
-            <dt>Asesoría adicional (videollamada o informe)</dt><dd class="dato">120 € / hora (mínimo 90 €)</dd>
+          <p>Los análisis son un servicio de la universidad. Se contratan y facturan a través de la <strong>Oficina de Transferencia de Resultados de Investigación (OTRI) de la EHU</strong>. Para la factura se necesitan los datos fiscales de la empresa o el DNI de la persona solicitante.</p>
+          <dl class="datos">
+            <dt>Asesoría adicional</dt><dd class="dato">120 € / hora (mínimo 90 €)</dd>
           </dl>
-          <p class="pequeno secundario">Precios con IVA incluido. El análisis de microbiota incluye el kit de toma de muestra.</p>
-          <p class="pequeno"><strong>Profesionales y empresas:</strong> para volúmenes de varios análisis o acuerdos de colaboración continuada, preparamos un presupuesto a medida. Escríbanos a través del formulario.</p>
+          <p class="pequeno"><strong>Profesionales y empresas:</strong> para volúmenes de varios análisis o acuerdos de colaboración continuada se elabora un presupuesto específico.</p>
         </div>
         <div>
           <h2>Solicitar análisis</h2>
-          <p>Rellene el formulario con sus datos y el análisis que le interesa. Le responderemos con el presupuesto, el consentimiento informado y los pasos siguientes. Los datos se usan solo para tramitar su solicitud (ver <a href="privacidad.html">privacidad</a>).</p>
+          <p>Indíquenos qué análisis le interesa y le enviaremos el consentimiento informado, las instrucciones y los pasos siguientes. Los datos se utilizan solo para tramitar su solicitud (ver <a href="privacidad.html">privacidad</a>).</p>
           <div class="botones">
-            <a class="boton" href="#" aria-disabled="true" data-tally="solicitud-analisis">Solicitar análisis</a>
+            <a class="boton" href="mailto:adrian.odriozola@ehu.eus?subject=Solicitud%20de%20an%C3%A1lisis%20-%20Hologenomiks">Solicitar análisis</a>
           </div>
-          <p class="pequeno"><span class="pendiente">[PENDIENTE: enlace al formulario de Tally de solicitud de análisis]</span></p>
-          <p class="pequeno">En el formulario no se piden datos de salud. Si solicita un análisis genético, podrá subir ahí su archivo de raw data con un consentimiento específico.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== INVESTIGACIÓN Y EMPRESAS ===================== -->
   <section class="seccion tintada" id="investigacion-empresas" aria-labelledby="t-ie">
     <div class="contenedor">
       <div class="seccion-cabeza">
         <span class="etiqueta">Para grupos de investigación y empresas</span>
         <h2 id="t-ie">Secuenciación y análisis bioinformático a medida</h2>
-        <p>Colaboramos con grupos de investigación, centros sanitarios y empresas (alimentación, probióticos, deporte, salud) en proyectos de genómica y microbioma, desde el diseño del estudio hasta el análisis y la publicación.</p>
+        <p>Colaboramos con grupos de investigación, centros sanitarios y empresas de alimentación, probióticos, deporte y salud en proyectos de genómica y microbioma, desde el diseño del estudio hasta el análisis y la publicación.</p>
       </div>
-      <div class="rejilla-3">
-        <div class="ficha">
-          <h3>Muestras y laboratorio</h3>
-          <ul>
-            <li>Asesoría en el diseño del estudio y el tamaño muestral.</li>
-            <li>Protocolos de recogida y estabilización de muestras de heces e hisopos.</li>
-            <li>Extracción de ADN y control de calidad.</li>
-          </ul>
-        </div>
-        <div class="ficha">
-          <h3>Secuenciación</h3>
-          <ul>
-            <li>Secuenciación de lectura larga con Oxford Nanopore (MinION).</li>
-            <li>Amplicón del gen 16S rRNA completo para perfiles bacterianos a nivel de especie.</li>
-            <li>Otras dianas y metagenómica, bajo consulta. <span class="pendiente">[PENDIENTE: dianas disponibles y capacidad por tanda]</span></li>
-          </ul>
-        </div>
-        <div class="ficha">
-          <h3>Bioinformática y análisis</h3>
-          <ul>
-            <li>Clasificación taxonómica, diversidad y abundancia diferencial.</li>
-            <li>Interpretación de datos genéticos (estudios de asociación, puntuaciones poligénicas).</li>
-            <li>Integración con datos clínicos, fisiológicos o dietéticos, incluido el análisis de datos funcionales.</li>
-            <li>Informe técnico, figuras y apoyo en la redacción de artículos.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="dos-columnas" style="margin-top:2rem">
+      <ol class="flujo" style="--pasos:4">
+        <li><strong>Diseño</strong><span>Pregunta, tamaño muestral y plan de análisis.</span></li>
+        <li><strong>Muestras y laboratorio</strong><span>Recogida y estabilización de heces o hisopos, extracción de ADN y control de calidad.</span></li>
+        <li><strong>Secuenciación</strong><span>Lectura larga con Oxford Nanopore (MinION): 16S rRNA completo; otras dianas y metagenómica bajo consulta.</span></li>
+        <li><strong>Análisis y resultados</strong><span>Taxonomía, diversidad, abundancia diferencial, integración con datos clínicos o fisiológicos, informe y apoyo a la publicación.</span></li>
+      </ol>
+      <div class="dos-columnas">
         <div>
           <h3>Modalidades</h3>
           <p>Servicio técnico con presupuesto cerrado, o proyecto de I+D colaborativo mediante contrato con la EHU gestionado por la OTRI. Los datos y resultados de cada proyecto son confidenciales.</p>
         </div>
         <div>
           <h3>Pedir presupuesto</h3>
-          <p>Cuéntenos el objetivo, el tipo y el número de muestras y los plazos. Le responderemos con una propuesta.</p>
+          <p>Describa el objetivo, el tipo y número de muestras y los plazos. Le responderemos con una propuesta técnica y económica.</p>
           <div class="botones">
-            <a class="boton" href="#" aria-disabled="true" data-tally="presupuesto">Pedir presupuesto</a>
+            <a class="boton" href="mailto:adrian.odriozola@ehu.eus?subject=Presupuesto%20de%20proyecto%20-%20Hologenomiks">Pedir presupuesto</a>
           </div>
-          <p class="pequeno"><span class="pendiente">[PENDIENTE: enlace al formulario de Tally de presupuesto]</span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== DESARROLLOS ===================== -->
   <section class="seccion" id="desarrollos" aria-labelledby="t-des">
-    <div class="contenedor">
-      <div class="seccion-cabeza">
+    <div class="contenedor dos-columnas">
+      <div>
         <h2 id="t-des">Desarrollos</h2>
-        <p>Herramientas propias que nacen de la investigación del grupo.</p>
+        <p>Los servicios incorporan herramientas propias que nacen de la investigación del grupo. La principal es <strong>Phymofood</strong>, el método patentado (EP 4 224 486 B1) que ordena alimentos según su capacidad potencial para favorecer los taxones poco abundantes del microbioma de cada persona.</p>
       </div>
-      <div class="fichas">
-        <article class="ficha">
-          <h3>Phymofood</h3>
-          <p>Método informático patentado (EP 4 224 486 B1) que ordena alimentos según su capacidad potencial para favorecer las bacterias poco abundantes en el microbioma de cada persona. Se usa en los informes de recomendaciones y en estudios del grupo.</p>
-          <a href="investigacion.html#patente">Ver la patente</a>
-        </article>
-        <article class="ficha">
-          <h3>HoloTwin</h3>
-          <p>Gemelo digital multiómico en desarrollo que integra datos genéticos, epigenéticos, microbianos, metabolómicos y de estilo de vida. Su primera aplicación es la investigación en prevención del cáncer colorrectal. Es una herramienta de investigación, no un producto clínico.</p>
-          <a href="investigacion.html#lineas">Ver la línea de investigación</a>
-        </article>
+      <div>
+        <p>El director del grupo es inventor de 8 patentes en genética aplicada, identificación genética y nutrición de precisión.</p>
+        <a class="boton boton--secundario" href="investigacion.html#patente">Ver la patente</a>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer class="pie sobre-oscuro">
@@ -284,7 +268,7 @@
     <div class="pie-rejilla">
       <div>
         <span class="marca-nombre">Hologenomiks</span>
-        <p>Dpto. de Genética, Antropología Física y Fisiología Animal<br>Facultad de Ciencia y Tecnología<br>Barrio Sarriena s/n · 48940 Leioa (Bizkaia)</p>
+        <p>Departamento de Genética, Antropología Física y Fisiología Animal<br>Facultad de Ciencia y Tecnología · EHU<br>Barrio Sarriena s/n · 48940 Leioa (Bizkaia)</p>
       </div>
       <div>
         <h2>Secciones</h2>

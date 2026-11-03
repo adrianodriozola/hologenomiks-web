@@ -3,16 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hologenomiks · Grupo de investigación EHU</title>
-<meta name="description" content="Hologenomiks es un grupo de investigación de la EHU que estudia la interacción entre el genoma humano y el microbioma, y su aplicación en nutrición, salud de precisión y actividad física.">
+<title>Hologenomiks · Genómica y microbioma humanos · Grupo de investigación de la EHU</title>
+<meta name="description" content="Grupo de investigación de la EHU que estudia el genoma humano y su microbioma y lo aplica a la salud de precisión mediante formación universitaria, análisis interpretados y proyectos de I+D.">
 <link rel="canonical" href="https://hologenomiks.eus/">
 <link rel="alternate" hreflang="es" href="https://hologenomiks.eus/">
-<!-- Futuro: <link rel="alternate" hreflang="eu" href="https://hologenomiks.eus/eu/"> · <link rel="alternate" hreflang="en" href="https://hologenomiks.eus/en/"> -->
+<link rel="alternate" hreflang="eu" href="https://hologenomiks.eus/eu/">
+<link rel="alternate" hreflang="en" href="https://hologenomiks.eus/en/">
+<link rel="alternate" hreflang="x-default" href="https://hologenomiks.eus/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Hologenomiks · EHU">
-<meta property="og:title" content="Hologenomiks · Genoma y microbioma humano (EHU)">
-<meta property="og:description" content="Investigación, formación universitaria y servicios de análisis genético y de microbioma de un grupo de la EHU.">
+<meta property="og:title" content="Hologenomiks · Genómica y microbioma humanos · Grupo de investigación de la EHU">
+<meta property="og:description" content="Grupo de investigación de la EHU que estudia el genoma humano y su microbioma y lo aplica a la salud de precisión mediante formación universitaria, análisis interpretados y proyectos de I+D.">
 <meta property="og:url" content="https://hologenomiks.eus/">
 <meta property="og:image" content="https://hologenomiks.eus/assets/img/og-hologenomiks.png">
 <meta property="og:image:width" content="1200">
@@ -25,14 +27,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="assets/css/hologenomics-costa.css">
 <link rel="stylesheet" href="assets/css/site.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ResearchOrganization","name":"Hologenomiks","alternateName":"Grupo de Investigación Hologenomiks (EHU)","url":"https://hologenomiks.eus/","logo":"https://hologenomiks.eus/assets/img/og-hologenomiks.png","parentOrganization":{"@type":"CollegeOrUniversity","name":"Euskal Herriko Unibertsitatea / Universidad del País Vasco (EHU)","url":"https://www.ehu.eus"},"address":{"@type":"PostalAddress","streetAddress":"Barrio Sarriena s/n, Facultad de Ciencia y Tecnología","postalCode":"48940","addressLocality":"Leioa","addressRegion":"Bizkaia","addressCountry":"ES"},"email":"adrian.odriozola@ehu.eus"}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ResearchOrganization", "name": "Hologenomiks", "alternateName": "Grupo de investigación Hologenomiks (EHU)", "url": "https://hologenomiks.eus/", "logo": "https://hologenomiks.eus/assets/img/og-hologenomiks.png", "parentOrganization": {"@type": "CollegeOrUniversity", "name": "Euskal Herriko Unibertsitatea / Universidad del País Vasco (EHU)", "url": "https://www.ehu.eus"}, "founder": {"@type": "Person", "name": "Adrian Odriozola Martínez", "sameAs": ["https://orcid.org/0000-0002-1109-1492", "https://www.linkedin.com/in/prof-dr-adrian-odriozola-61b45357/"]}, "address": {"@type": "PostalAddress", "streetAddress": "Barrio Sarriena s/n, Facultad de Ciencia y Tecnología", "postalCode": "48940", "addressLocality": "Leioa", "addressRegion": "Bizkaia", "addressCountry": "ES"}, "email": "adrian.odriozola@ehu.eus"}</script>
 </head>
 <body>
 <a class="salto" href="#contenido">Saltar al contenido</a>
 
-<header class="cabecera sobre-oscuro">
+<header class="cabecera">
   <div class="contenedor">
     <a class="marca" href="index.html" aria-label="Hologenomiks, grupo de investigación de la EHU. Inicio">
       <img class="marca-ehu" src="assets/img/ehu-logotipo.svg" alt="EHU" width="60" height="60">
@@ -40,10 +40,8 @@
       <img class="marca-hg" src="assets/img/hg-logo.svg" alt="" width="40" height="40">
       <span class="marca-nombre">Hologenomiks</span>
     </a>
-    <button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav-principal">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Menú
-    </button>
-    <nav class="nav" id="nav-principal" aria-label="Principal">
+    <div class="cabecera-der">
+      <nav class="nav" id="nav-principal" aria-label="Principal">
       <ul>
         <li><a href="index.html" aria-current="page">Inicio</a></li>
         <li><a href="investigacion.html">I+D</a></li>
@@ -51,59 +49,93 @@
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="equipo.html">Equipo y contacto</a></li>
       </ul>
-    </nav>
+      </nav>
+      <div class="idiomas" role="navigation" aria-label="Idioma"><a href="index.html" hreflang="es" lang="es" aria-current="true" title="Castellano">ES</a><a href="eu/index.html" hreflang="eu" lang="eu" title="Euskara">EU</a><a href="en/index.html" hreflang="en" lang="en" title="English">EN</a></div>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav-principal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Menú
+      </button>
+    </div>
   </div>
 </header>
 
 <main id="contenido">
-
-  <section class="portada sobre-oscuro" aria-labelledby="titulo-portada">
+  <section class="portada sobre-oscuro" aria-labelledby="t-portada">
     <div class="contenedor">
-      <span class="etiqueta">Grupo de investigación de la EHU</span>
-      <h1 id="titulo-portada">El genoma humano y su microbioma, estudiados juntos</h1>
-      <p>Hologenomiks investiga cómo interactúan nuestra genética y las bacterias que nos habitan, y cómo esa interacción responde a la alimentación, la actividad física y los ritmos de vida.</p>
-      <p>Trasladamos ese conocimiento a formación universitaria y a análisis interpretados con criterios de evidencia científica.</p>
-      <div class="botones">
-        <a class="boton" href="investigacion.html">Ver la investigación</a>
-        <a class="boton boton--secundario" href="equipo.html#contacto">Contacto</a>
+      <div>
+        <span class="etiqueta">Grupo de investigación de la EHU</span>
+        <h1 id="t-portada">Genómica y microbioma humanos aplicados a la salud de precisión</h1>
+        <p>Estudiamos el holobionte humano, es decir, el genoma del hospedador y su microbioma como un único sistema, y cómo responde a la alimentación, la actividad física y los ritmos circadianos.</p>
+        <p>Trasladamos esa evidencia a la práctica mediante formación universitaria, análisis genéticos y de microbioma interpretados y proyectos de I+D con instituciones y empresas.</p>
+        <div class="botones">
+          <a class="boton" href="servicios.html">Servicios y análisis</a>
+          <a class="boton boton--secundario" href="formacion.html">Formación</a>
+        </div>
+        <p class="lema">Del dato ómico a la decisión aplicada</p>
       </div>
+      <div class="portada-figura"><img src="assets/img/holobionte.svg" alt="" width="440" height="360"></div>
     </div>
   </section>
 
-  <section class="seccion" aria-labelledby="titulo-accesos">
+  <section class="seccion" aria-labelledby="t-ofrecemos">
     <div class="contenedor">
       <div class="seccion-cabeza">
-        <h2 id="titulo-accesos">Qué ofrecemos</h2>
+        <h2 id="t-ofrecemos">Qué ofrecemos</h2>
       </div>
       <div class="accesos">
         <a class="acceso" href="formacion.html">
           <svg class="icono" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 18 24 9l20 9-20 9z" fill="currentColor"/><path d="M12 22v10c0 3 6 6 12 6s12-3 12-6V22l-12 5z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M42 19v12" stroke="currentColor" stroke-width="3"/></svg>
-          <h3>Formación</h3>
-          <p>Microcredenciales universitarias de la EHU en análisis genómico y de microbioma, en línea y con proyecto aplicado.</p>
+          <h3>Formación universitaria</h3>
+          <p>Microcredenciales de la EHU para interpretar análisis genéticos y de microbioma con criterio científico y aplicarlos en la práctica profesional.</p>
           <span class="ir">Ver microcredenciales →</span>
         </a>
         <a class="acceso" href="servicios.html#analisis">
           <svg class="icono" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="32" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 32h8M12 26h14M12 20h20M12 14h11" stroke="currentColor" stroke-width="2.5"/></svg>
           <h3>Análisis genético y de microbioma</h3>
-          <p>Estudio genético a partir de tus datos brutos (raw data) y análisis de microbiota intestinal, con informe interpretado.</p>
+          <p>Interpretación de sus datos genéticos (raw data) y análisis del microbioma intestinal por secuenciación de lectura larga, con informe y recomendaciones.</p>
           <span class="ir">Ver análisis →</span>
         </a>
         <a class="acceso" href="servicios.html#investigacion-empresas">
           <svg class="icono" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="30" width="36" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 30V12h8v18M22 16h8" stroke="currentColor" stroke-width="3" fill="none"/><circle cx="34" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="3"/></svg>
-          <h3>Servicios para investigación y empresas</h3>
-          <p>Secuenciación de lectura larga y análisis bioinformático a medida para proyectos de investigación y empresas.</p>
+          <h3>I+D con instituciones y empresas</h3>
+          <p>Diseño de estudios, secuenciación, bioinformática y validación de productos y estrategias en salud, alimentación y deporte.</p>
           <span class="ir">Pedir presupuesto →</span>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="seccion tintada" aria-labelledby="titulo-sello">
+  <section class="seccion tintada" aria-labelledby="t-aplicacion">
+    <div class="contenedor">
+      <div class="seccion-cabeza">
+        <h2 id="t-aplicacion">Cómo se aplica</h2>
+        <p>La genómica y el microbioma aportan información útil cuando se integran con la historia, los hábitos y los objetivos de cada persona o proyecto.</p>
+      </div>
+      <div class="usos">
+        <div class="uso">
+          <span class="etiqueta">Nutrición y salud</span>
+          <h3>Pautas dietéticas orientadas por el perfil individual</h3>
+          <p>El perfil del microbioma y las variantes genéticas relevantes ayudan al profesional a priorizar alimentos, fibras y probióticos, y a medir la respuesta a la intervención.</p>
+        </div>
+        <div class="uso">
+          <span class="etiqueta">Actividad física y deporte</span>
+          <h3>Entrenamiento, recuperación y salud intestinal</h3>
+          <p>Los marcadores genéticos de respuesta al entrenamiento y la dinámica del microbioma en competición aportan contexto para planificar cargas, nutrición y descanso.</p>
+        </div>
+        <div class="uso">
+          <span class="etiqueta">Investigación y empresa</span>
+          <h3>Evidencia para productos e intervenciones</h3>
+          <p>Estudios con secuenciación de lectura larga y análisis bioinformático para evaluar alimentos, probióticos y estrategias de intervención con rigor metodológico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" aria-labelledby="t-universidad">
     <div class="contenedor dos-columnas">
       <div>
-        <h2 id="titulo-sello">Un grupo universitario</h2>
-        <p>Hologenomiks forma parte del Departamento de Genética, Antropología Física y Fisiología Animal de la Facultad de Ciencia y Tecnología de la EHU, en el campus de Leioa.</p>
-        <p>La formación se imparte como microcredenciales oficiales de la universidad y los análisis se contratan a través de la Oficina de Transferencia de Resultados de Investigación (OTRI) de la EHU.</p>
+        <h2 id="t-universidad">Un grupo universitario</h2>
+        <p>Hologenomiks pertenece al Departamento de Genética, Antropología Física y Fisiología Animal de la Facultad de Ciencia y Tecnología de la EHU, en el campus de Leioa.</p>
+        <p>La formación se imparte como microcredenciales oficiales de la universidad y los servicios se contratan a través de su Oficina de Transferencia de Resultados de Investigación (OTRI).</p>
       </div>
       <div>
         <div class="sello">
@@ -114,69 +146,46 @@
     </div>
   </section>
 
-  <section class="seccion" aria-labelledby="t-dirige">
+  <section class="seccion tintada" aria-labelledby="t-dirige">
     <div class="contenedor">
       <div class="dirige">
         <picture>
           <source srcset="assets/img/adrian-odriozola.webp" type="image/webp">
-          <img src="assets/img/adrian-odriozola.jpg" alt="Retrato del Dr. Adrian Odriozola Martínez" width="374" height="468" loading="lazy">
+          <img src="assets/img/adrian-odriozola.jpg" alt="Retrato del Prof. Dr. Adrian Odriozola Martínez" width="374" height="468" loading="lazy">
         </picture>
         <div>
           <span class="etiqueta">Dirige el grupo</span>
-          <h2 id="t-dirige">Dr. Adrian Odriozola Martínez</h2>
-          <p>Profesor Agregado de Genética en la EHU. Investiga la interacción entre la genética del hospedador y el microbioma, y dirige la microcredencial de especialización en análisis genómico y de microbioma.</p>
+          <h2 id="t-dirige">Prof. Dr. Adrian Odriozola Martínez</h2>
+          <p>Profesor Agregado de Genética en la EHU. Investiga la interacción entre la genética del hospedador y el microbioma y su aplicación en nutrición, actividad física y prevención. Autor de 75 artículos científicos, inventor de 8 patentes y editor de dos volúmenes de <em>Advances in Genetics</em> (Elsevier).</p>
           <a href="equipo.html">Conocer el grupo →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="seccion" aria-labelledby="titulo-pubs">
+  <section class="seccion" aria-labelledby="t-pubs">
     <div class="contenedor">
       <div class="seccion-cabeza">
-        <h2 id="titulo-pubs">Últimas publicaciones</h2>
-        <p>Una selección de los trabajos más recientes del grupo. La lista completa está en la página de I+D.</p>
+        <h2 id="t-pubs">Últimas publicaciones</h2>
       </div>
       <ul class="pubs-recientes">
         <li><article class="pub-mini">
           <span class="revista">High Altitude Medicine &amp; Biology · 2026</span>
           <h3><a href="https://doi.org/10.1177/15578682251396447">Gut Microbiota Dynamics During Extreme Altitude Climbing: A Longitudinal Case Report</a></h3>
-          <p class="pequeno">Estudio de caso: cambios en la microbiota intestinal de un alpinista durante cuatro semanas de exposición a gran altitud.</p>
+          <p class="pequeno">Dinámica del microbioma intestinal durante cuatro semanas de exposición a gran altitud: pérdida de diversidad y aumento transitorio de taxones oportunistas.</p>
         </article></li>
         <li><article class="pub-mini">
-          <span class="revista">Journal of Functional Morphology and Kinesiology · 2026</span>
+          <span class="revista">J Funct Morphol Kinesiol · 2026</span>
           <h3><a href="https://doi.org/10.3390/jfmk11020151">Beyond Static Assessment: Functional Data Analysis for Assessing Physiological Responses to High-Intensity Effort</a></h3>
-          <p class="pequeno">Prueba de concepto del análisis de datos funcionales para describir la recuperación individual tras un esfuerzo máximo en ciclistas.</p>
+          <p class="pequeno">Análisis de datos funcionales para caracterizar perfiles individuales de recuperación tras un esfuerzo máximo.</p>
         </article></li>
         <li><article class="pub-mini">
           <span class="revista">Nutrients · 2025</span>
           <h3><a href="https://doi.org/10.3390/nu18010059">Thyroid-Microbiome Allostasis and Mitochondrial Performance: An Integrative Perspective in Exercise Physiology</a></h3>
-          <p class="pequeno">Revisión sobre el eje tiroides-microbioma-mitocondria en la respuesta fisiológica al ejercicio.</p>
+          <p class="pequeno">Revisión del eje tiroides-microbioma-mitocondria en la regulación alostática de la respuesta al ejercicio.</p>
         </article></li>
       </ul>
       <div class="botones"><a class="boton boton--secundario" href="investigacion.html#publicaciones">Todas las publicaciones</a></div>
-    </div>
-  </section>
-
-  <!-- ESPACIO RESERVADO · LIBROS (no visible todavía).
-       Dos libros: Vol. I «Fundamentos» y Vol. II «Aplicado», derivados de las microcredenciales.
-       Para mostrarlo: quitar el atributo hidden y completar títulos, editorial y enlace. -->
-  <section class="seccion" id="libros-futuros" aria-labelledby="titulo-libros-futuros" hidden>
-    <div class="contenedor">
-      <h2 id="titulo-libros-futuros">Libros</h2>
-      <div class="fichas">
-        <article class="ficha"><h3>Vol. I · Fundamentos</h3><p class="meta">[PENDIENTE: título, editorial, fecha]</p></article>
-        <article class="ficha"><h3>Vol. II · Aplicado</h3><p class="meta">[PENDIENTE: título, editorial, fecha]</p></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ESPACIO RESERVADO · POSGRADO (no visible todavía).
-       Futuro título de posgrado que integre las microcredenciales. Quitar hidden cuando exista. -->
-  <section class="seccion" id="posgrado" aria-labelledby="titulo-posgrado" hidden>
-    <div class="contenedor">
-      <h2 id="titulo-posgrado">Posgrado</h2>
-      <p>[PENDIENTE: nombre, tipo de título y calendario]</p>
     </div>
   </section>
 
@@ -187,7 +196,7 @@
     <div class="pie-rejilla">
       <div>
         <span class="marca-nombre">Hologenomiks</span>
-        <p>Dpto. de Genética, Antropología Física y Fisiología Animal<br>Facultad de Ciencia y Tecnología<br>Barrio Sarriena s/n · 48940 Leioa (Bizkaia)</p>
+        <p>Departamento de Genética, Antropología Física y Fisiología Animal<br>Facultad de Ciencia y Tecnología · EHU<br>Barrio Sarriena s/n · 48940 Leioa (Bizkaia)</p>
       </div>
       <div>
         <h2>Secciones</h2>
