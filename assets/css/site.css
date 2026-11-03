@@ -8,6 +8,10 @@
 
 :root{
   color-scheme:light;
+  /* Ajustes de contraste AA medidos (ver DECISIONES.md, 2026-11-03):
+     hueso-100 sobre mar-500 = 4,37:1 y pizarra-300 sobre hueso-100 = 4,49:1 (no llegan a 4,5:1). */
+  --boton-texto:var(--hueso-000);          /* blanco sobre mar-500 = 4,90:1 */
+  --texto-secundario:var(--piedra-700);    /* sobre hueso-100 = 4,70:1 */
   --ancho:72rem;
   --lectura:42rem;
 }
@@ -72,14 +76,14 @@ li{margin-bottom:.35em}
 .cabeza-pagina h1{color:var(--hueso-100)}
 .portada p,.cabeza-pagina p{max-width:var(--lectura);color:var(--pizarra-050)}
 .cabeza-pagina p{margin:0}
-.etiqueta{display:block;margin-bottom:var(--espacio-3);color:var(--pizarra-300)}
+.etiqueta{display:block;margin-bottom:var(--espacio-3);color:var(--texto-secundario)}
 /* El único acento ámbar de cada página: la etiqueta sobre pizarra (pareja válida ámbar-500/pizarra-500). */
 .portada .etiqueta,.cabeza-pagina .etiqueta{color:var(--ambar-500)}
 
 /* ---------- Secciones ---------- */
 .seccion{padding:var(--espacio-12) 0}
 .seccion+.seccion{border-top:1px solid var(--linea)}
-.seccion.tintada{background:var(--hueso-200);border-top:0}
+.seccion.tintada{background:var(--hueso-200);border-top:0;--texto-secundario:var(--pizarra-500)}
 .seccion-cabeza{max-width:var(--lectura);margin-bottom:var(--espacio-8)}
 .seccion-cabeza p{color:var(--texto-secundario)}
 .lectura{max-width:var(--lectura)}
