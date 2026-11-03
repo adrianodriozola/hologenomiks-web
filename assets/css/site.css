@@ -279,7 +279,6 @@ p,li,dd,dt,h1,h2,h3,h4,a,.pendiente{overflow-wrap:break-word}
 }
 .nav.abierto{background:var(--superficie);border-bottom:1px solid var(--linea)}
 .nav.abierto a{border-bottom-color:var(--linea)}
-@media (max-width:1040px) and (min-width:880px){.marca .marca-nombre{display:none}}
 @media (max-width:560px){.marca-grupo{display:none}.marca-ehu{width:48px;height:48px}}
 @media (max-width:360px){.marca .marca-nombre{display:none}}
 
@@ -409,3 +408,20 @@ p,li,dd,dt,h1,h2,h3,h4,a,.pendiente{overflow-wrap:break-word}
 .usos>*,.resultados>*,.metodo>*,.libros>*,.cifras>*{min-width:0}
 
 .resultado .lectura-res{font:var(--pequeno);color:var(--texto);margin:var(--espacio-2) 0 0}
+
+/* Cabecera en teléfonos con selector de idioma: sin solapamientos */
+.marca .marca-nombre{white-space:nowrap}
+.marca{flex-shrink:1}
+.cabecera-der{flex-shrink:0}
+@media (max-width:560px){.marca-hg{display:none}}
+/* Menú completo solo en pantallas anchas (los textos en euskera son más largos) */
+@media (max-width:1199px){
+  .menu-boton{display:inline-flex}
+  .nav{display:none}
+  .nav.abierto{display:block;position:absolute;left:0;right:0;top:100%;background:var(--superficie);border-bottom:1px solid var(--linea)}
+  .nav.abierto ul{display:block;padding:var(--espacio-2) var(--espacio-4) var(--espacio-4)}
+  .nav.abierto a{color:var(--texto);border-bottom:1px solid var(--linea);padding:.7rem .25rem;border-radius:0;box-shadow:none}
+  .nav.abierto a[aria-current="page"]{text-decoration:underline;text-underline-offset:.3em}
+}
+@media (max-width:700px){.marca-grupo{display:none}}
+@media (max-width:440px){.marca .marca-nombre{display:none}}
