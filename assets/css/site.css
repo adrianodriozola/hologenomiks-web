@@ -507,3 +507,13 @@ html{scroll-padding-top:8rem}
 
 .trl-res{display:none}
 @media (max-width:719px){.trl-res{display:block;font:var(--pequeno);font-weight:400;color:var(--texto-secundario)}.trl-actual,.trl-objetivo{font-size:0}}
+
+/* Phymofood: cinco pasos y dendrograma UPGMA */
+@media (min-width:960px){.metodo.cinco{grid-template-columns:repeat(5,1fr)}}
+@media (min-width:760px) and (max-width:959px){.metodo.cinco{grid-template-columns:repeat(3,1fr)}.metodo.cinco li::after{display:none}}
+.phymo{display:grid;gap:var(--espacio-8);align-items:start;margin-top:var(--espacio-6)}
+@media (min-width:960px){.phymo{grid-template-columns:1.1fr 1fr}}
+.phymo>*{min-width:0}
+.phymo-fig{margin:0;background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio-2);padding:var(--espacio-3)}
+.phymo-fig svg{width:100%;height:auto;display:block}
+.phymo-fig figcaption{font:var(--pequeno);color:var(--texto-secundario);margin-top:var(--espacio-2)}
