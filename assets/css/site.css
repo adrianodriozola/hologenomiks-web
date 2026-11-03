@@ -284,3 +284,14 @@ p,li,dd,dt,h1,h2,h3,h4,a,.pendiente{overflow-wrap:break-word}
 @media (max-width:360px){.marca .marca-nombre{display:none}}
 
 .sello-logo{width:88px;height:88px;flex:none}
+
+/* Cabecera compacta en teléfonos (360-560 px): logotipos, nombre y botón «Menú» caben sin desbordar. */
+.cabecera .contenedor{gap:var(--espacio-2)}
+.marca{min-width:0}
+@media (max-width:560px){
+  .marca{gap:var(--espacio-2)}
+  .marca-hg{width:34px;height:34px}
+  .marca .marca-nombre{font-size:19px;line-height:22px}
+  .menu-boton{padding:.4rem .6rem;gap:.35rem}
+}
+@media (max-width:400px){.marca-ehu{width:42px;height:42px}}
