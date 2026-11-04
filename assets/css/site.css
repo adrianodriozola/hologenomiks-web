@@ -516,4 +516,40 @@ html{scroll-padding-top:8rem}
 .phymo>*{min-width:0}
 .phymo-fig{margin:0;background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio-2);padding:var(--espacio-3)}
 .phymo-fig svg{width:100%;height:auto;display:block}
+.phymo-fig .dg-movil{display:none}
+@media (max-width:559px){.phymo-fig .dg-ancho{display:none}.phymo-fig .dg-movil{display:block}}
+.mc-enfoque{font:var(--pequeno);color:var(--texto);margin:var(--espacio-3) 0 0;padding-top:var(--espacio-3);border-top:1px solid var(--linea)}
+.mc-enfoque strong{color:var(--pizarra-500)}
 .phymo-fig figcaption{font:var(--pequeno);color:var(--texto-secundario);margin-top:var(--espacio-2)}
+
+/* Mapa de líneas de investigación (I+D) */
+.mapa-lin{margin:0 0 var(--espacio-8);background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio-2);padding:var(--espacio-4);display:grid;gap:var(--espacio-3)}
+@media (min-width:720px){.mapa-lin{padding:var(--espacio-6)}}
+.ml-cab{display:flex;flex-direction:column;gap:2px;margin-bottom:var(--espacio-1)}
+.ml-cab strong{font:600 19px/26px var(--font-titulos);color:var(--pizarra-500)}
+.ml-cab span{font:var(--pequeno);color:var(--texto-secundario)}
+.ml-capa{position:relative;display:grid;gap:var(--espacio-2);border-radius:var(--radio-1);padding:var(--espacio-3) var(--espacio-4);min-width:0}
+@media (min-width:720px){.ml-capa{grid-template-columns:150px 1fr;align-items:center;gap:var(--espacio-4)}}
+.ml-capa+.ml-capa::before{content:"";position:absolute;left:50%;top:calc(-1 * var(--espacio-3));transform:translateX(-50%);border:6px solid transparent;border-top:0;border-bottom:8px solid var(--mar-500)}
+.ml-nivel{font:var(--etiqueta);letter-spacing:.08em;text-transform:uppercase}
+.ml-capa p{margin:0;font-weight:600}
+.ml-items{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--espacio-2)}
+.ml-items li{margin:0;padding:var(--espacio-1) var(--espacio-3);border-radius:var(--radio-1);font:600 14px/20px var(--font-texto)}
+.ml-tres{display:grid;gap:var(--espacio-2)}
+@media (min-width:720px){.ml-tres{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ml-num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;margin-right:var(--espacio-2);font:700 12px/1 var(--font-datos);vertical-align:1px}
+.ml-transf{background:var(--mar-050);border-left:4px solid var(--mar-500)}
+.ml-transf .ml-nivel{color:var(--mar-900)}
+.ml-transf .ml-items li{background:var(--superficie);color:var(--mar-900);border:1px solid var(--mar-100)}
+.ml-apl{background:var(--pizarra-050);border-left:4px solid var(--pizarra-500)}
+.ml-apl .ml-nivel{color:var(--pizarra-500)}
+.ml-apl .ml-items li{background:var(--superficie);color:var(--pizarra-500);border:1px solid var(--linea);padding:var(--espacio-2) var(--espacio-3)}
+.ml-marco{background:var(--pizarra-500);color:var(--hueso-000)}
+.ml-marco .ml-nivel{color:var(--pizarra-100)}
+.ml-base{background:var(--pizarra-700);color:var(--hueso-000)}
+.ml-base .ml-nivel{color:var(--pizarra-100)}
+.ml-apl .ml-num{background:var(--pizarra-500);color:var(--hueso-000)}
+.ml-marco .ml-num,.ml-base .ml-num{background:var(--hueso-000);color:var(--pizarra-700)}
+
+/* Subtítulos del CV */
+.perfil-sub{font:var(--etiqueta);letter-spacing:.08em;text-transform:uppercase;color:var(--texto-secundario);margin:var(--espacio-6) 0 var(--espacio-2)}
