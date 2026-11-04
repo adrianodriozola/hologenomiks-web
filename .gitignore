@@ -16,3 +16,6 @@ Thumbs.db
 ~$*
 *.tmp
 __pycache__/
+*.url
+*.lnk
+.~lock.*
