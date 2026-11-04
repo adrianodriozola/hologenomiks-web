@@ -530,7 +530,7 @@ html{scroll-padding-top:8rem}
 .ml-cab span{font:var(--pequeno);color:var(--texto-secundario)}
 .ml-capa{position:relative;display:grid;gap:var(--espacio-2);border-radius:var(--radio-1);padding:var(--espacio-3) var(--espacio-4);min-width:0}
 @media (min-width:720px){.ml-capa{grid-template-columns:150px 1fr;align-items:center;gap:var(--espacio-4)}}
-.ml-capa+.ml-capa::before{content:"";position:absolute;left:50%;top:calc(-1 * var(--espacio-3));transform:translateX(-50%);border:6px solid transparent;border-top:0;border-bottom:8px solid var(--mar-500)}
+.ml-capa+.ml-capa::before{content:"";position:absolute;left:50%;top:calc(-1 * var(--espacio-3));transform:translateX(-50%);border:6px solid transparent;border-bottom:0;border-top:8px solid var(--mar-500)}
 .ml-nivel{font:var(--etiqueta);letter-spacing:.08em;text-transform:uppercase}
 .ml-capa p{margin:0;font-weight:600}
 .ml-items{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--espacio-2)}
