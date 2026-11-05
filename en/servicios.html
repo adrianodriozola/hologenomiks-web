@@ -157,8 +157,9 @@
             <span class="pg-arch"><i></i>Polygenic · many variants</span>
             <h2>Power and muscle strength</h2>
             <div class="pg-val">Percentile 68<br><small>Polygenic score across 142 variants</small></div>
-            <svg viewBox="0 0 300 118" aria-label="Population distribution and contribution of many variants">
-              <text x="0" y="12" font-size="9" fill="var(--texto-secundario)" font-family="'JetBrains Mono', monospace">Your score vs. the reference population</text>
+            <svg viewBox="0 0 300 130" aria-label="Population distribution and contribution of many variants">
+              <text x="0" y="10" font-size="9" fill="var(--texto-secundario)" font-family="'JetBrains Mono', monospace">Your score vs. the reference population</text>
+              <g transform="translate(0 10)">
               <path d="M10 60 C 60 60, 90 20, 150 20 S 240 60, 290 60" fill="var(--mar-100)" stroke="var(--mar-300)" stroke-width="1.5"/>
               <line x1="10" y1="60" x2="290" y2="60" stroke="var(--linea)"/>
               <line x1="203" y1="22" x2="203" y2="60" stroke="var(--texto)" stroke-width="2"/>
@@ -166,8 +167,9 @@
               <text x="203" y="16" text-anchor="middle" font-size="8.5" fill="var(--texto)" font-family="'JetBrains Mono', monospace">p68</text>
               <text x="10" y="71" font-size="8" fill="var(--texto-secundario)" font-family="'Source Sans 3', sans-serif">lower</text>
               <text x="290" y="71" text-anchor="end" font-size="8" fill="var(--texto-secundario)" font-family="'Source Sans 3', sans-serif">higher</text>
-              <text x="0" y="88" font-size="9" fill="var(--texto-secundario)" font-family="'JetBrains Mono', monospace">142 variants · small individual effect</text>
-              <g id="strip"></g>
+              </g>
+              <text x="0" y="93" font-size="9" fill="var(--texto-secundario)" font-family="'JetBrains Mono', monospace">142 variants · small individual effect</text>
+              <g transform="translate(0 16)"><g id="strip"></g></g>
             </svg>
             <p class="pg-txt">No single gene determines this trait. <em>ACTN3</em> is one of the 142 variants and contributes a small fraction of the total. What is reported is where the sum of all of them falls relative to the reference population.</p>
             <div class="pg-ev"><b>EVIDENCE B</b><span class="pg-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>GWAS meta-analysis · limited explained variance</div>
