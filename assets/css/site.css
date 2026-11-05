@@ -574,8 +574,8 @@ html{scroll-padding-top:8rem}
 .pg-leg{display:flex;gap:14px;font-size:.75rem;color:var(--texto-secundario);flex-wrap:wrap}
 .pg-leg span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 .pg-leg .a::before{background:var(--mar-500)} .pg-leg .b::before{background:var(--piedra-300)} .pg-leg .c::before{background:var(--ambar-500)}
-/* Con la tarjeta poligénica: dos columnas en escritorio (las dos tarjetas de un gen apiladas a la izquierda) para que no queden huecos. */
+/* Con la tarjeta poligénica: dos columnas en escritorio (lactasa y cafeína apiladas a la izquierda, la poligénica a la derecha) para que no queden huecos. */
 @media (min-width:860px){
-  .resultados:has(.pg-card){grid-template-columns:1fr 1fr}
-  .resultados:has(.pg-card)>.pg-card{grid-column:2;grid-row:1 / span 2}
+  .resultados:has(.pg-poli){grid-template-columns:1fr 1fr}
+  .resultados:has(.pg-poli)>.pg-poli{grid-column:2;grid-row:1 / span 2;justify-content:space-between}
 }
