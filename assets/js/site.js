@@ -24,7 +24,7 @@
   for(let i=0;i<N;i++){
     const c=i%cols, r=Math.floor(i/cols);
     const eff=rnd(); const dir=rnd();
-    const fill= dir<0.42?"var(--mar-500)": dir<0.78?"var(--piedra-300)":"var(--ambar-500)";
+    const fill= dir<0.42?"var(--pizarra-500)": dir<0.78?"var(--piedra-300)":"var(--ambar-500)";
     const rad= i===17?3.4: 1.2+eff*1.6;
     const el=document.createElementNS("http://www.w3.org/2000/svg","circle");
     el.setAttribute("cx",(x0+c*w+w/2).toFixed(1)); el.setAttribute("cy",(y0+r*8)); el.setAttribute("r",rad.toFixed(1)); el.setAttribute("fill",fill);

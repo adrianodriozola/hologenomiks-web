@@ -556,26 +556,30 @@ html{scroll-padding-top:8rem}
 
 /* Tarjeta de fenotipo poligénico (Servicios · análisis genético). Original de Adrian (2026-11-05):
    clases con prefijo pg- y variables de hologenomics-costa.css. Franja de variantes: site.js (#strip). */
-.pg-card{background:var(--superficie);border:1px solid var(--linea);border-radius:12px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.pg-card{background:var(--fondo);border:1px solid var(--linea);border-radius:var(--radio-2);padding:var(--espacio-4);display:flex;flex-direction:column;gap:var(--espacio-3);min-width:0}
+.pg-val.pg-val-texto{font-size:1.15rem;line-height:1.25}
 .pg-card h2{font:600 17px/24px var(--font-texto);margin:0}
 .pg-card p{margin:0}
 .pg-arch{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-datos);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--texto-secundario)}
-.pg-arch i{width:8px;height:8px;border-radius:50%;background:var(--mar-500);display:inline-block}
+.pg-arch i{width:8px;height:8px;border-radius:50%;background:var(--pizarra-500);display:inline-block}
 .pg-val{font-family:var(--font-datos);font-size:1.6rem;font-weight:600;line-height:1}
 .pg-val small{font-size:.75rem;font-weight:400;color:var(--texto-secundario);font-family:var(--font-texto)}
 .pg-card svg{width:100%;height:auto;display:block;max-width:100%}
 .pg-txt{font-size:.92rem}
 .pg-meta{display:flex;flex-wrap:wrap;gap:6px 12px;font-family:var(--font-datos);font-size:.7rem;color:var(--texto-secundario)}
 .pg-ev{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--linea);border-radius:4px;padding:3px 8px;font-size:.78rem;flex-wrap:wrap}
-.pg-ev b{font-family:var(--font-datos);font-size:.7rem;letter-spacing:.04em;color:var(--mar-700)}
+.pg-ev b{font-family:var(--font-datos);font-size:.7rem;letter-spacing:.04em;color:var(--pizarra-700)}
 .pg-dots{display:flex;gap:3px}
 .pg-dots i{width:9px;height:9px;border-radius:50%;background:var(--piedra-300);display:inline-block}
-.pg-dots i.on{background:var(--mar-500)}
+.pg-dots i.on{background:var(--pizarra-500)}
 .pg-leg{display:flex;gap:14px;font-size:.75rem;color:var(--texto-secundario);flex-wrap:wrap}
 .pg-leg span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
-.pg-leg .a::before{background:var(--mar-500)} .pg-leg .b::before{background:var(--piedra-300)} .pg-leg .c::before{background:var(--ambar-500)}
-/* Con la tarjeta poligénica: dos columnas en escritorio (lactasa y cafeína apiladas a la izquierda, la poligénica a la derecha) para que no queden huecos. */
+.pg-leg .a::before{background:var(--pizarra-500)} .pg-leg .b::before{background:var(--piedra-300)} .pg-leg .c::before{background:var(--ambar-500)}
+/* Ejemplos genéticos en escritorio: lactasa y cafeína en la primera fila; la poligénica ocupa la fila entera,
+   con el texto a la izquierda y la gráfica a la derecha (mismo HTML). Así no quedan huecos. */
 @media (min-width:860px){
   .resultados:has(.pg-poli){grid-template-columns:1fr 1fr}
-  .resultados:has(.pg-poli)>.pg-poli{grid-column:2;grid-row:1 / span 2;justify-content:space-between}
+  .resultados:has(.pg-poli)>.pg-poli{grid-column:1 / -1;display:grid;grid-template-columns:1fr 1fr;column-gap:var(--espacio-8);align-content:start}
+  .pg-poli>*{grid-column:1}
+  .pg-poli>svg{grid-column:2;grid-row:1 / span 7;align-self:center}
 }
