@@ -66,7 +66,7 @@
     <div class="contenedor">
       <span class="etiqueta">Transferencia</span>
       <h1>Servicios y desarrollos</h1>
-      <p>Análisis de microbioma y genéticos con informe interpretado según la evidencia disponible, y apoyo técnico y científico a proyectos de investigación y empresas. Todos los servicios se prestan y facturan a través de la EHU.</p>
+      <p>Análisis de microbioma y análisis genéticos con informe interpretado según la evidencia disponible, y apoyo técnico y científico a proyectos de investigación y empresas. Todos los servicios se prestan y facturan a través de la EHU.</p>
     </div>
   </div>
 
@@ -74,7 +74,7 @@
     <div class="contenedor">
       <div class="seccion-cabeza">
         <h2 id="t-analisis">Análisis para personas y profesionales</h2>
-        <p>Pensados para que un profesional de la salud, la nutrición o el deporte, o la propia persona acompañada por él, disponga de información biológica individual con la que orientar y medir una intervención.</p>
+        <p>Pensados para que un profesional de la salud, la nutrición o el deporte, o la propia persona usuaria, disponga de información biológica individual con la que orientar y medir una intervención.</p>
       </div>
 
       <article class="servicio mic" id="microbioma" aria-labelledby="t-mic">
@@ -85,13 +85,13 @@
           </div>
           <p class="precio">220 €<small>IVA incluido</small></p>
         </div>
-        <p class="lectura">Caracterizamos la composición del microbioma intestinal a partir de una muestra de heces mediante secuenciación del gen 16S rRNA completo con tecnología de lectura larga (Oxford Nanopore, MinION), que permite resolver numerosos taxones a nivel de especie. El informe de recomendaciones utiliza nuestro método patentado (EP 4 224 486 B1).</p>
+        <p class="lectura">Caracterizamos la composición del microbioma intestinal a partir de una muestra de heces mediante secuenciación del gen 16S rRNA completo, que permite resolver numerosos taxones a nivel de especie.</p>
         <h3>Cómo se hace</h3>
         <ol class="flujo mar" style="--pasos:4">
-          <li><strong>Kit en casa</strong><span>Tubo con conservante, instrucciones y consentimiento informado.</span></li>
+          <li><strong>Kit enviado al domicilio del usuario</strong><span>Tubo con conservante, instrucciones y consentimiento informado.</span></li>
           <li><strong>Toma y envío</strong><span>La muestra es estable a temperatura ambiente durante dos meses; se envía por correo.</span></li>
-          <li><strong>Secuenciación y bioinformática</strong><span>Extracción de ADN, 16S completo en MinION, clasificación taxonómica y comparación con la referencia.</span></li>
-          <li><strong>Informes</strong><span>Plazo habitual de 7 a 10 días hábiles desde la llegada de la muestra (máximo 20).</span></li>
+          <li><strong>Secuenciación y bioinformática</strong><span>Extracción de ADN, 16S completo, clasificación taxonómica y comparación con valores de referencia para cada fenotipo. Aplicación de sistemas bioinformáticos desarrollados por el propio grupo.</span></li>
+          <li><strong>Informes</strong><span>Plazo habitual de 10 a 15 días hábiles desde la llegada de la muestra (máximo 20).</span></li>
         </ol>
         <div class="dos-columnas">
           <div>
@@ -137,7 +137,7 @@
             <p class="lectura-res">La elección de un probiótico corresponde al profesional que le atiende.</p>
           </div>
         </div>
-        <p class="pequeno secundario" style="margin-top:1rem">Escala de evidencia: tres barras, asociaciones replicadas en estudios amplios o metaanálisis; dos, asociaciones consistentes en varios estudios; una, evidencia inicial. Los ejemplos no proceden de ninguna persona analizada.</p>
+        <p class="pequeno secundario" style="margin-top:1rem">Escala de evidencia: tres barras, asociaciones replicadas en estudios amplios o metaanálisis; dos, asociaciones consistentes en varios estudios; una, evidencia inicial.</p>
       </article>
 
       <article class="servicio" id="genetico" aria-labelledby="t-gen">
@@ -188,15 +188,29 @@
             <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><span>Evidencia moderada: efecto consistente, modulado por tabaco y otros factores.</span></div>
             <p class="lectura-res">Orienta la valoración de la tolerancia; no sirve para fijar dosis.</p>
           </div>
-          <div class="resultado">
-            <h4>Tipo de fibra muscular</h4>
-            <p class="que">Proporción relativa de fibras rápidas.</p>
-            <div class="genotipo"><span class="alelos"><b>C</b><b class="alt">T</b></span><span class="gen">ACTN3 · rs1815739 (R577X)</span></div>
-            <p class="estado">Genotipo RX: perfil mixto</p>
-            <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><span>Evidencia moderada: asociación con potencia en deportistas; efecto pequeño.</span></div>
-            <p class="lectura-res">Explica una parte pequeña del rendimiento, que es poligénico y depende del entrenamiento.</p>
-          </div>
+          <article class="pg-card">
+            <span class="pg-arch"><i></i>Poligénico · muchas variantes</span>
+            <h2>Potencia y fuerza muscular</h2>
+            <div class="pg-val">Percentil 68<br><small>Puntuación poligénica sobre 142 variantes</small></div>
+            <svg viewBox="0 0 300 118" aria-label="Distribución poblacional y contribución de muchas variantes">
+              <text x="0" y="12" font-size="9" fill="var(--texto-secundario)" font-family="'JetBrains Mono', monospace">Tu puntuación frente a la población de referencia</text>
+              <path d="M10 60 C 60 60, 90 20, 150 20 S 240 60, 290 60" fill="var(--mar-100)" stroke="var(--mar-300)" stroke-width="1.5"/>
+              <line x1="10" y1="60" x2="290" y2="60" stroke="var(--linea)"/>
+              <line x1="203" y1="22" x2="203" y2="60" stroke="var(--texto)" stroke-width="2"/>
+              <circle cx="203" cy="22" r="4" fill="var(--texto)"/>
+              <text x="203" y="16" text-anchor="middle" font-size="8.5" fill="var(--texto)" font-family="'JetBrains Mono', monospace">p68</text>
+              <text x="10" y="71" font-size="8" fill="var(--texto-secundario)" font-family="'Source Sans 3', sans-serif">menor</text>
+              <text x="290" y="71" text-anchor="end" font-size="8" fill="var(--texto-secundario)" font-family="'Source Sans 3', sans-serif">mayor</text>
+              <text x="0" y="88" font-size="9" fill="var(--texto-secundario)" font-family="'JetBrains Mono', monospace">142 variantes · efecto individual pequeño</text>
+              <g id="strip"></g>
+            </svg>
+            <p class="pg-txt">Ningún gen decide este rasgo. <em>ACTN3</em> es una de las 142 variantes y aporta una fracción pequeña del total. Lo que se informa es dónde cae la suma de todas respecto a la población de referencia.</p>
+            <div class="pg-ev"><b>EVIDENCIA B</b><span class="pg-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>Metaanálisis GWAS · varianza explicada limitada</div>
+            <div class="pg-leg"><span class="a">aumenta</span><span class="b">neutra en tu genotipo</span><span class="c">disminuye</span></div>
+            <div class="pg-meta"><span>Tipo: percentil</span><span>Ancestría: europea</span><span>Se recalcula con nueva evidencia</span></div>
+          </article>
         </div>
+        <p class="pequeno secundario" style="margin-top:1rem">Los datos de estos ejemplos son ilustrativos.</p>
       </article>
 
       <div class="nota lectura">

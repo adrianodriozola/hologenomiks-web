@@ -66,23 +66,23 @@
     <div class="contenedor">
       <span class="etiqueta">Knowledge transfer</span>
       <h1>Services and developments</h1>
-      <p>Microbiome and genetic analyses with reports interpreted according to the available evidence, and technical and scientific support for research projects and companies. All services are provided and invoiced through the EHU.</p>
+      <p>Microbiome analyses and genetic analyses with reports interpreted according to the available evidence, and technical and scientific support for research projects and companies. All services are provided and invoiced through the EHU.</p>
     </div>
   </div>
 
   <section class="seccion" id="analisis" aria-labelledby="t-analisis">
     <div class="contenedor">
-      <div class="seccion-cabeza"><h2 id="t-analisis">Analyses for individuals and professionals</h2><p>Designed so that a health, nutrition or sport professional, or the person supported by one, has individual biological information with which to guide and measure an intervention.</p></div>
+      <div class="seccion-cabeza"><h2 id="t-analisis">Analyses for individuals and professionals</h2><p>Designed so that a health, nutrition or sport professional, or the user themselves, has individual biological information with which to guide and measure an intervention.</p></div>
 
       <article class="servicio mic" id="microbioma" aria-labelledby="t-mic">
         <div class="servicio-cabeza"><div><span class="etiqueta-tipo mic">Microbiome</span><h2 id="t-mic">Gut microbiome analysis</h2></div><p class="precio">€220<small>VAT included</small></p></div>
-        <p class="lectura">We characterise the gut microbiome from a stool sample by full-length 16S rRNA sequencing with long-read technology (Oxford Nanopore, MinION), which resolves many taxa to species level. The recommendation report uses our patented method (EP 4 224 486 B1).</p>
+        <p class="lectura">We characterise the gut microbiome from a stool sample by full-length 16S rRNA sequencing, which resolves many taxa to species level.</p>
         <h3>How it works</h3>
         <ol class="flujo mar" style="--pasos:4">
-          <li><strong>Home kit</strong><span>Tube with preservative, instructions and informed consent.</span></li>
+          <li><strong>Kit sent to the user's home</strong><span>Tube with preservative, instructions and informed consent.</span></li>
           <li><strong>Sampling and shipping</strong><span>The sample is stable at room temperature for two months and is sent by post.</span></li>
-          <li><strong>Sequencing and bioinformatics</strong><span>DNA extraction, full-length 16S on MinION, taxonomic classification and comparison with the reference.</span></li>
-          <li><strong>Reports</strong><span>Usually 7 to 10 working days from sample arrival (maximum 20).</span></li>
+          <li><strong>Sequencing and bioinformatics</strong><span>DNA extraction, full-length 16S, taxonomic classification and comparison with reference values for each phenotype. Application of bioinformatic systems developed by the group itself.</span></li>
+          <li><strong>Reports</strong><span>Usually 10 to 15 working days from sample arrival (maximum 20).</span></li>
         </ol>
         <div class="dos-columnas">
           <div><h3>What it is for</h3><p>To assess the state of the gut ecosystem at a given time (diversity, functional groups, potential to produce metabolites such as short-chain fatty acids, presence of probiotics), guide diet and supplementation changes with a professional, and compare progress after an intervention.</p></div>
@@ -118,7 +118,7 @@
             <p class="lectura-res">Choosing a probiotic is a decision for your professional.</p>
           </div>
         </div>
-        <p class="pequeno secundario" style="margin-top:1rem">Evidence scale: three bars, associations replicated in large studies or meta-analyses; two, consistent associations across several studies; one, early evidence. Examples do not come from any analysed person.</p>
+        <p class="pequeno secundario" style="margin-top:1rem">Evidence scale: three bars, associations replicated in large studies or meta-analyses; two, consistent associations across several studies; one, early evidence.</p>
       </article>
 
       <article class="servicio" id="genetico" aria-labelledby="t-gen">
@@ -153,15 +153,29 @@
             <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><span>Moderate evidence: consistent effect, modified by smoking and other factors.</span></div>
             <p class="lectura-res">Helps assess tolerance; not for setting doses.</p>
           </div>
-          <div class="resultado">
-            <h4>Muscle fibre type</h4>
-            <p class="que">Relative proportion of fast-twitch fibres.</p>
-            <div class="genotipo"><span class="alelos"><b>C</b><b class="alt">T</b></span><span class="gen">ACTN3 · rs1815739 (R577X)</span></div>
-            <p class="estado">RX genotype: mixed profile</p>
-            <div class="evidencia"><span class="barras" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><span>Moderate evidence: association with power in athletes; small effect.</span></div>
-            <p class="lectura-res">Explains a small part of performance, which is polygenic and training-dependent.</p>
-          </div>
+          <article class="pg-card">
+            <span class="pg-arch"><i></i>Polygenic · many variants</span>
+            <h2>Power and muscle strength</h2>
+            <div class="pg-val">Percentile 68<br><small>Polygenic score across 142 variants</small></div>
+            <svg viewBox="0 0 300 118" aria-label="Population distribution and contribution of many variants">
+              <text x="0" y="12" font-size="9" fill="var(--texto-secundario)" font-family="'JetBrains Mono', monospace">Your score vs. the reference population</text>
+              <path d="M10 60 C 60 60, 90 20, 150 20 S 240 60, 290 60" fill="var(--mar-100)" stroke="var(--mar-300)" stroke-width="1.5"/>
+              <line x1="10" y1="60" x2="290" y2="60" stroke="var(--linea)"/>
+              <line x1="203" y1="22" x2="203" y2="60" stroke="var(--texto)" stroke-width="2"/>
+              <circle cx="203" cy="22" r="4" fill="var(--texto)"/>
+              <text x="203" y="16" text-anchor="middle" font-size="8.5" fill="var(--texto)" font-family="'JetBrains Mono', monospace">p68</text>
+              <text x="10" y="71" font-size="8" fill="var(--texto-secundario)" font-family="'Source Sans 3', sans-serif">lower</text>
+              <text x="290" y="71" text-anchor="end" font-size="8" fill="var(--texto-secundario)" font-family="'Source Sans 3', sans-serif">higher</text>
+              <text x="0" y="88" font-size="9" fill="var(--texto-secundario)" font-family="'JetBrains Mono', monospace">142 variants · small individual effect</text>
+              <g id="strip"></g>
+            </svg>
+            <p class="pg-txt">No single gene determines this trait. <em>ACTN3</em> is one of the 142 variants and contributes a small fraction of the total. What is reported is where the sum of all of them falls relative to the reference population.</p>
+            <div class="pg-ev"><b>EVIDENCE B</b><span class="pg-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>GWAS meta-analysis · limited explained variance</div>
+            <div class="pg-leg"><span class="a">increases</span><span class="b">neutral in your genotype</span><span class="c">decreases</span></div>
+            <div class="pg-meta"><span>Type: percentile</span><span>Ancestry: European</span><span>Recalculated with new evidence</span></div>
+          </article>
         </div>
+        <p class="pequeno secundario" style="margin-top:1rem">The data in these examples are illustrative.</p>
       </article>
 
       <div class="nota lectura"><p style="margin:0">The reports are not diagnostic tests and do not replace assessment by a health professional. They provide individual biological information to guide, together with a health, nutrition or sport professional, decisions on diet, supplementation, training and rest, and to measure the response to those decisions over time.</p></div>
