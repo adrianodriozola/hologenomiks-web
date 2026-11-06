@@ -1,4 +1,4 @@
-/* JavaScript del sitio: menú en móvil y franja de la tarjeta poligénica de Servicios. Sin cookies ni almacenamiento. */
+/* JavaScript del sitio: menú en móvil, formulario de información y franja de la tarjeta poligénica de Servicios. Sin cookies ni almacenamiento. */
 (function () {
   var boton = document.querySelector(".menu-boton");
   var nav = document.getElementById("nav-principal");
@@ -13,6 +13,32 @@
       boton.setAttribute("aria-expanded", "false");
       boton.focus();
     }
+  });
+})();
+
+/* Formulario «Solicitar más información» (servicios): prepara un correo con los datos; no envía nada a ningún servidor. */
+(function () {
+  var f = document.querySelector(".form-info"); if (!f) return;
+  var etiqueta = function (el) { var l = el.closest("label"); return l && l.firstChild && l.firstChild.nodeType === 3 ? l.firstChild.textContent.trim() : el.name; };
+  document.querySelectorAll("[data-interes]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      var c = f.querySelector('input[name="interes"][value="' + a.getAttribute("data-interes") + '"]');
+      if (c) c.checked = true;
+    });
+  });
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var L = [];
+    ["nombre", "correo", "organizacion", "perfil"].forEach(function (n) {
+      var el = f.elements[n]; if (el && el.value.trim()) L.push(etiqueta(el) + ": " + el.value.trim());
+    });
+    var ints = [].slice.call(f.querySelectorAll('input[name="interes"]:checked')).map(function (c) { return "- " + c.getAttribute("data-txt").replace(/&amp;/g, "&"); });
+    if (ints.length) { L.push(""); L.push(f.querySelector("legend").textContent + ":"); L = L.concat(ints); }
+    var t = f.elements.tarifas;
+    L.push(""); L.push(t.parentNode.textContent.trim() + ": " + (t.checked ? f.getAttribute("data-si") : f.getAttribute("data-no")));
+    var m = f.elements.mensaje.value.trim();
+    if (m) { L.push(""); L.push(m); }
+    window.location.href = "mailto:" + f.getAttribute("data-para") + "?subject=" + encodeURIComponent(f.getAttribute("data-asunto")) + "&body=" + encodeURIComponent(L.join("\n"));
   });
 })();
 

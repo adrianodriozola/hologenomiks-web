@@ -75,7 +75,7 @@
       <div class="seccion-cabeza"><h2 id="t-analisis">Analyses for individuals and professionals</h2><p>Designed so that a health, nutrition or sport professional, or the user themselves, has individual biological information with which to guide and measure an intervention.</p></div>
 
       <article class="servicio mic" id="microbioma" aria-labelledby="t-mic">
-        <div class="servicio-cabeza"><div><span class="etiqueta-tipo mic">Microbiome</span><h2 id="t-mic">Gut microbiome analysis</h2></div><p class="precio">€220<small>VAT included</small></p></div>
+        <div class="servicio-cabeza"><div><span class="etiqueta-tipo mic">Microbiome</span><h2 id="t-mic">Gut microbiome analysis</h2></div></div>
         <p class="lectura">We characterise the gut microbiome from a stool sample by full-length 16S rRNA sequencing, which resolves many taxa to species level.</p>
         <h3>How it works</h3>
         <ol class="flujo mar" style="--pasos:4">
@@ -86,7 +86,7 @@
         </ol>
         <div class="dos-columnas">
           <div><h3>What it is for</h3><p>To assess the state of the gut ecosystem at a given time (diversity, functional groups, potential to produce metabolites such as short-chain fatty acids, presence of probiotics), guide diet and supplementation changes with a professional, and compare progress after an intervention.</p></div>
-          <div><h3>What you receive</h3><ul><li><strong>Results report</strong> by category: gut health, general health, metabolism and energy, diet comparison, physical activity, probiotic foods, probiotics and postbiotics (short-chain fatty acids, vitamins and neurotransmitters).</li><li><strong>Recommendation report</strong> with a personalised ranking of foods, prebiotics and probiotics.</li><li>Optional: <strong>sports performance report</strong> · €250 (VAT included).</li></ul></div>
+          <div><h3>What you receive</h3><ul><li><strong>Results report</strong> by category: gut health, general health, metabolism and energy, diet comparison, physical activity, probiotic foods, probiotics and postbiotics (short-chain fatty acids, vitamins and neurotransmitters).</li><li><strong>Recommendation report</strong> with a personalised ranking of foods, prebiotics and probiotics.</li><li>Optional: <strong>sports performance report</strong>, as an additional service.</li></ul></div>
         </div>
         <h3>Example results <span class="ilustrativo">Illustrative</span></h3>
         <div class="resultados">
@@ -122,8 +122,8 @@
       </article>
 
       <article class="servicio" id="genetico" aria-labelledby="t-gen">
-        <div class="servicio-cabeza"><div><span class="etiqueta-tipo gen">Host genetics</span><h2 id="t-gen">Genetic analysis from raw data</h2></div><p class="precio">€150<small>VAT included</small></p></div>
-        <p class="lectura">If you already have a consumer genetic test (23andMe, MyHeritage or similar), we interpret your raw data file without a new sample: more than 180 traits related to nutrition, metabolism, body composition, exercise response and recovery.</p>
+        <div class="servicio-cabeza"><div><span class="etiqueta-tipo gen">Host genetics</span><h2 id="t-gen">Genetic analysis from raw data</h2></div></div>
+        <p class="lectura">From the raw data file of a genetic test you have already taken, we interpret more than 180 traits, grouped into ten categories: body composition, blood tests, healthy physical activity, endurance training, power training, fatigue and recovery, health, diet, nutrients and supplementation.</p>
         <h3>How it works</h3>
         <ol class="flujo" style="--pasos:4">
           <li><strong>Request</strong><span>Form and specific informed consent.</span></li>
@@ -133,7 +133,7 @@
         </ol>
         <div class="dos-columnas">
           <div><h3>What it is for</h3><p>To identify predispositions with practical use (nutrient tolerance, metabolism of compounds such as caffeine, response to each type of training) and, with a professional, prioritise decisions on diet, supplementation and training.</p></div>
-          <div><h3>What you receive</h3><ul><li>Report with results grouped into categories: health, diet, nutrients, supplementation, blood tests, body composition, physical activity, endurance, power, and fatigue and recovery.</li><li>For each trait: genotype, tendency relative to the general population, explanation and level of evidence.</li><li>Technical sheet of the traits analysed.</li></ul></div>
+          <div><h3>What you receive</h3><ul><li>Report with the results for each of these categories and an index of all traits.</li><li>For each trait: genotype, tendency relative to the general population, explanation and level of evidence.</li><li>Technical sheet of the traits analysed.</li></ul></div>
         </div>
         <h3>Example results <span class="ilustrativo">Illustrative</span></h3>
         <div class="resultados">
@@ -202,12 +202,24 @@
         <div>
           <h2>How to order</h2>
           <p>The analyses are a university service, contracted and invoiced through the <strong>EHU Technology Transfer Office (OTRI)</strong>. Invoicing requires the company's tax details or the applicant's ID.</p>
-          <dl class="datos"><dt>Additional consultation</dt><dd class="dato">€120 / hour (minimum €90)</dd></dl>
+          <dl class="datos"><dt>Additional consultation</dt><dd>Additional service, by video call or written report.</dd></dl>
+          <p>Fees are provided on request, together with the rest of the information.</p>
         </div>
         <div>
-          <h2>Request an analysis</h2>
-          <p>Tell us which analysis you are interested in and we will send you the informed consent, instructions and next steps. Your data are used only to process your request (see <a href="privacidad.html">privacy</a>).</p>
-          <div class="botones"><a class="boton" href="mailto:adrian.odriozola@ehu.eus?subject=Analysis%20request%20-%20Hologenomiks">Request an analysis</a></div>
+          <h2 id="t-info">Request more information</h2>
+          <p>Tell us what you are interested in. We will reply with information on the analysis or project, the next steps and, if you ask for them, the fees.</p>
+          <form class="form-info" data-para="adrian.odriozola@ehu.eus" data-asunto="Information request - Hologenomiks" data-si="Yes" data-no="No" aria-labelledby="t-info">
+            <label>Full name<input type="text" name="nombre" autocomplete="name" required></label>
+            <label>Email<input type="email" name="correo" autocomplete="email" required></label>
+            <label>Organisation (optional)<input type="text" name="organizacion" autocomplete="organization"></label>
+            <label>Profile<select name="perfil"><option>Health, nutrition or sport professional</option><option>Individual</option><option>Research group</option><option>Company or technology centre</option><option>Other</option></select></label>
+            <fieldset><legend>I am interested in</legend><label class="fi-check"><input type="checkbox" name="interes" value="microbioma" data-txt="Gut microbiome analysis"> Gut microbiome analysis</label><label class="fi-check"><input type="checkbox" name="interes" value="deporte" data-txt="Sports performance report"> Sports performance report</label><label class="fi-check"><input type="checkbox" name="interes" value="genetico" data-txt="Genetic analysis from raw data"> Genetic analysis from raw data</label><label class="fi-check"><input type="checkbox" name="interes" value="asesoria" data-txt="Additional consultation"> Additional consultation</label><label class="fi-check"><input type="checkbox" name="interes" value="proyecto" data-txt="Sequencing or bioinformatic analysis project"> Sequencing or bioinformatic analysis project</label><label class="fi-check"><input type="checkbox" name="interes" value="idi" data-txt="R&amp;D&amp;I collaboration or a funding call"> R&amp;D&amp;I collaboration or a funding call</label></fieldset>
+            <label class="fi-check"><input type="checkbox" name="tarifas"> I would like to receive the fees</label>
+            <label>Message (optional)<textarea name="mensaje" rows="4"></textarea></label>
+            <label class="fi-check fi-consent"><input type="checkbox" name="consentimiento" required> <span>I agree that my data will be used only to answer this request (see <a href="privacidad.html">privacy</a>).</span></label>
+            <div class="botones"><button class="boton" type="submit">Request more information</button></div>
+            <p class="pequeno secundario">When you press the button, your email program will open with the message ready for <a href="mailto:adrian.odriozola@ehu.eus">adrian.odriozola@ehu.eus</a>. If it does not open, you can write to that address directly.</p>
+          </form>
         </div>
       </div>
     </div>
@@ -224,7 +236,7 @@
       </ol>
       <div class="dos-columnas">
         <div><h3>Formats</h3><p>Technical service with a fixed quote, or collaborative R&amp;D project under a contract with the EHU managed by the OTRI. Data and results of each project are confidential.</p></div>
-        <div><h3>Request a quote</h3><p>Describe the aim, sample type and number, and timelines. We will reply with a technical and financial proposal.</p><div class="botones"><a class="boton" href="mailto:adrian.odriozola@ehu.eus?subject=Project%20quote%20-%20Hologenomiks">Request a quote</a></div></div>
+        <div><h3>Custom projects</h3><p>Describe the aim, sample type and number, and timelines. We will reply with a technical and financial proposal.</p><div class="botones"><a class="boton" href="#solicitar" data-interes="proyecto">Request more information</a></div></div>
       </div>
       <div class="dos-columnas" style="margin-top:2rem">
         <div><h3>Technology-based companies and centres</h3><p>We work with technology-based companies, technology centres and healthcare organisations to develop and validate products, services and algorithms based on genomic and microbiome data. Transfer is formalised through contracts with the EHU, licences of our patented technology or joint projects.</p></div>
@@ -234,9 +246,8 @@
   </section>
 
   <section class="seccion" id="desarrollos" aria-labelledby="t-des">
-    <div class="contenedor dos-columnas">
-      <div><h2 id="t-des">Developments</h2><p>Our services incorporate tools developed from the group's research, mainly <strong>Phymofood</strong>, the patented method (EP 4 224 486 B1) that ranks foods by their potential to favour the low-abundance taxa of each person's microbiome.</p></div>
-      <div><p>The group leader is the inventor of 7 patents in applied genetics, genetic identification and precision nutrition.</p><a class="boton boton--secundario" href="investigacion.html#patente">See the patent</a></div>
+    <div class="contenedor">
+      <div class="seccion-cabeza"><h2 id="t-des">Developments</h2><p>Our services incorporate tools developed from the group's research. The group leader is the inventor of 7 patents in applied genetics, genetic identification and precision nutrition.</p></div>
     </div>
   </section>
 

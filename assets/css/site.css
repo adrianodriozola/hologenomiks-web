@@ -583,3 +583,17 @@ html{scroll-padding-top:8rem}
   .pg-poli>*{grid-column:1}
   .pg-poli>svg{grid-column:2;grid-row:1 / span 7;align-self:center}
 }
+
+/* Formulario «Solicitar más información» (servicios, 2026-11-06) */
+.form-info{display:grid;gap:var(--espacio-3);background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio-2);padding:var(--espacio-4) var(--espacio-6);margin-top:var(--espacio-4)}
+.form-info label{display:grid;gap:4px;font-weight:600;color:var(--pizarra-500)}
+.form-info input[type=text],.form-info input[type=email],.form-info select,.form-info textarea{font:inherit;font-weight:400;color:var(--texto);background:var(--fondo);border:1px solid var(--linea);border-radius:var(--radio-1);padding:.55rem .7rem;min-height:44px;width:100%;box-sizing:border-box;max-width:100%}
+.form-info textarea{resize:vertical}
+.form-info fieldset{border:0;margin:0;padding:0;display:grid;gap:6px}
+.form-info legend{font-weight:600;color:var(--pizarra-500);padding:0;margin-bottom:4px}
+.form-info .fi-check{display:flex;align-items:flex-start;gap:.55rem;font-weight:400;color:var(--texto)}
+.form-info .fi-check input{width:18px;height:18px;margin:.2rem 0 0;flex:none;accent-color:var(--pizarra-500)}
+.form-info .fi-consent{font-size:.95em}
+.form-info .botones{margin-top:var(--espacio-2)}
+.form-info p.pequeno{margin:0}
+@media (max-width:520px){.form-info{padding:var(--espacio-4)}}

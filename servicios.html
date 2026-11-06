@@ -83,7 +83,6 @@
             <span class="etiqueta-tipo mic">Microbioma</span>
             <h2 id="t-mic">Análisis del microbioma intestinal</h2>
           </div>
-          <p class="precio">220 €<small>IVA incluido</small></p>
         </div>
         <p class="lectura">Caracterizamos la composición del microbioma intestinal a partir de una muestra de heces mediante secuenciación del gen 16S rRNA completo, que permite resolver numerosos taxones a nivel de especie.</p>
         <h3>Cómo se hace</h3>
@@ -103,7 +102,7 @@
             <ul>
               <li><strong>Informe de resultados</strong> por categorías: salud intestinal, salud general, metabolismo y aporte energético, comparativa de dietas, actividad física, alimentos probióticos, probióticos y postbióticos (ácidos grasos de cadena corta, vitaminas y neurotransmisores).</li>
               <li><strong>Informe de recomendaciones</strong> con un ranking personalizado de alimentos, prebióticos y probióticos.</li>
-              <li>Opcional: <strong>informe aplicado al rendimiento deportivo</strong> · 250 € (IVA incluido).</li>
+              <li>Opcional: <strong>informe aplicado al rendimiento deportivo</strong>, como servicio adicional.</li>
             </ul>
           </div>
         </div>
@@ -146,9 +145,8 @@
             <span class="etiqueta-tipo gen">Genética del hospedador</span>
             <h2 id="t-gen">Análisis genético a partir de raw data</h2>
           </div>
-          <p class="precio">150 €<small>IVA incluido</small></p>
         </div>
-        <p class="lectura">Si ya dispone de un estudio genético de consumo (23andMe, MyHeritage u otras compañías), interpretamos su archivo de datos brutos sin necesidad de una nueva muestra: más de 180 rasgos de nutrición, metabolismo, composición corporal, respuesta al ejercicio y recuperación.</p>
+        <p class="lectura">A partir del archivo de datos brutos (raw data) de un estudio genético ya realizado, interpretamos más de 180 rasgos, agrupados en diez categorías: composición corporal, analítica, actividad física saludable, resistencia, potencia, fatiga y recuperación, salud, dieta, nutrientes y suplementación.</p>
         <h3>Cómo se hace</h3>
         <ol class="flujo" style="--pasos:4">
           <li><strong>Solicitud</strong><span>Formulario y consentimiento informado específico.</span></li>
@@ -164,7 +162,7 @@
           <div>
             <h3>Qué recibe</h3>
             <ul>
-              <li>Informe con los resultados agrupados en categorías: salud, dieta, nutrientes, suplementación, analítica, composición corporal, actividad física, resistencia, potencia, y fatiga y recuperación.</li>
+              <li>Informe con los resultados de cada una de esas categorías y un índice de todos los rasgos.</li>
               <li>Para cada rasgo: genotipo, tendencia respecto a la población general, explicación y nivel de evidencia.</li>
               <li>Ficha técnica de los rasgos analizados.</li>
             </ul>
@@ -240,15 +238,25 @@
           <h2>Cómo se contrata</h2>
           <p>Los análisis son un servicio de la universidad. Se contratan y facturan a través de la <strong>Oficina de Transferencia de Resultados de Investigación (OTRI) de la EHU</strong>. Para la factura se necesitan los datos fiscales de la empresa o el DNI de la persona solicitante.</p>
           <dl class="datos">
-            <dt>Asesoría adicional</dt><dd class="dato">120 € / hora (mínimo 90 €)</dd>
+            <dt>Asesoría adicional</dt><dd>Servicio adicional, por videollamada o informe.</dd>
           </dl>
+          <p>Las tarifas se facilitan bajo solicitud, junto con el resto de la información.</p>
         </div>
         <div>
-          <h2>Solicitar análisis</h2>
-          <p>Indíquenos qué análisis le interesa y le enviaremos el consentimiento informado, las instrucciones y los pasos siguientes. Los datos se utilizan solo para tramitar su solicitud (ver <a href="privacidad.html">privacidad</a>).</p>
-          <div class="botones">
-            <a class="boton" href="mailto:adrian.odriozola@ehu.eus?subject=Solicitud%20de%20an%C3%A1lisis%20-%20Hologenomiks">Solicitar análisis</a>
-          </div>
+          <h2 id="t-info">Solicitar más información</h2>
+          <p>Cuéntenos qué le interesa. Le responderemos con la información del análisis o del proyecto, los pasos siguientes y, si lo solicita, las tarifas.</p>
+          <form class="form-info" data-para="adrian.odriozola@ehu.eus" data-asunto="Solicitud de información - Hologenomiks" data-si="Sí" data-no="No" aria-labelledby="t-info">
+            <label>Nombre y apellidos<input type="text" name="nombre" autocomplete="name" required></label>
+            <label>Correo electrónico<input type="email" name="correo" autocomplete="email" required></label>
+            <label>Organización (opcional)<input type="text" name="organizacion" autocomplete="organization"></label>
+            <label>Perfil<select name="perfil"><option>Profesional de la salud, la nutrición o el deporte</option><option>Persona particular</option><option>Grupo de investigación</option><option>Empresa o centro tecnológico</option><option>Otro</option></select></label>
+            <fieldset><legend>Me interesa</legend><label class="fi-check"><input type="checkbox" name="interes" value="microbioma" data-txt="Análisis del microbioma intestinal"> Análisis del microbioma intestinal</label><label class="fi-check"><input type="checkbox" name="interes" value="deporte" data-txt="Informe aplicado al rendimiento deportivo"> Informe aplicado al rendimiento deportivo</label><label class="fi-check"><input type="checkbox" name="interes" value="genetico" data-txt="Análisis genético a partir de raw data"> Análisis genético a partir de raw data</label><label class="fi-check"><input type="checkbox" name="interes" value="asesoria" data-txt="Asesoría adicional"> Asesoría adicional</label><label class="fi-check"><input type="checkbox" name="interes" value="proyecto" data-txt="Proyecto de secuenciación o análisis bioinformático"> Proyecto de secuenciación o análisis bioinformático</label><label class="fi-check"><input type="checkbox" name="interes" value="idi" data-txt="Colaboración en I+D+i o en una convocatoria"> Colaboración en I+D+i o en una convocatoria</label></fieldset>
+            <label class="fi-check"><input type="checkbox" name="tarifas"> Deseo recibir las tarifas</label>
+            <label>Mensaje (opcional)<textarea name="mensaje" rows="4"></textarea></label>
+            <label class="fi-check fi-consent"><input type="checkbox" name="consentimiento" required> <span>Acepto que mis datos se utilicen solo para responder a esta solicitud (ver <a href="privacidad.html">privacidad</a>).</span></label>
+            <div class="botones"><button class="boton" type="submit">Solicitar más información</button></div>
+            <p class="pequeno secundario">Al pulsar el botón se abrirá su programa de correo con el mensaje preparado para <a href="mailto:adrian.odriozola@ehu.eus">adrian.odriozola@ehu.eus</a>. Si no se abre, puede escribir directamente a esa dirección.</p>
+          </form>
         </div>
       </div>
     </div>
@@ -273,10 +281,10 @@
           <p>Servicio técnico con presupuesto cerrado, o proyecto de I+D colaborativo mediante contrato con la EHU gestionado por la OTRI. Los datos y resultados de cada proyecto son confidenciales.</p>
         </div>
         <div>
-          <h3>Pedir presupuesto</h3>
+          <h3>Proyectos a medida</h3>
           <p>Describa el objetivo, el tipo y número de muestras y los plazos. Le responderemos con una propuesta técnica y económica.</p>
           <div class="botones">
-            <a class="boton" href="mailto:adrian.odriozola@ehu.eus?subject=Presupuesto%20de%20proyecto%20-%20Hologenomiks">Pedir presupuesto</a>
+            <a class="boton" href="#solicitar" data-interes="proyecto">Solicitar más información</a>
           </div>
         </div>
       </div>
@@ -294,14 +302,10 @@
   </section>
 
   <section class="seccion" id="desarrollos" aria-labelledby="t-des">
-    <div class="contenedor dos-columnas">
-      <div>
+    <div class="contenedor">
+      <div class="seccion-cabeza">
         <h2 id="t-des">Desarrollos</h2>
-        <p>Los servicios incorporan herramientas propias que nacen de la investigación del grupo. La principal es <strong>Phymofood</strong>, el método patentado (EP 4 224 486 B1) que ordena alimentos según su capacidad potencial para favorecer los taxones poco abundantes del microbioma de cada persona.</p>
-      </div>
-      <div>
-        <p>El director del grupo es inventor de 7 patentes en genética aplicada, identificación genética y nutrición de precisión.</p>
-        <a class="boton boton--secundario" href="investigacion.html#patente">Ver la patente</a>
+        <p>Los servicios incorporan herramientas propias que nacen de la investigación del grupo. El director del grupo es inventor de 7 patentes en genética aplicada, identificación genética y nutrición de precisión.</p>
       </div>
     </div>
   </section>
